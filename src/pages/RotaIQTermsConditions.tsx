@@ -1,0 +1,753 @@
+import { Link } from "react-router-dom";
+import "../App.css";
+
+function RotaIQTermsConditions() {
+  return (
+    <div className="legal-page">
+      <section className="legal-hero">
+        <div className="container">
+          <Link to="/products/rotaiq" className="back-link">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            Back to RotaIQ
+          </Link>
+          <h1>Terms & Conditions</h1>
+          <p className="legal-subtitle">Last Updated: November 202</p>
+        </div>
+      </section>
+
+      <section className="legal-content">
+        <div className="container">
+          <h2>Agreement to Terms of Use</h2>
+          <p>
+            When you create a Rota IQ account, you are acknowledging your
+            acceptance of (i) these Terms of Use, (ii) our Privacy Policy, and
+            (iii) any terms you agree to when purchasing additional app
+            features, products, or services (collectively referred to as "this
+            Agreement"). If you do not agree to all the terms of this Agreement,
+            please refrain from using the app.
+          </p>
+          <p>
+            We reserve the right to make changes to this Agreement periodically.
+            This may be done for various reasons, including legal requirements,
+            new features, or changes in business practices. The latest version
+            of this Agreement will be available within the app (accessible
+            through the "Settings" section). If significant changes are made to
+            your rights or obligations, we will notify you at least 30 days in
+            advance (unless legally prevented) through reasonable means, which
+            may include app notifications or email. By continuing to use the app
+            after the changes take effect, you are agreeing to the revised
+            Agreement.
+          </p>
+
+          <h2>Eligibility</h2>
+          <p>
+            You may only create an account or access and use the app and its
+            systems if the following conditions are met:
+          </p>
+          <ul>
+            <li>
+              You are at least 18 years old, or you have obtained parental or
+              guardian consent if you are between 16 and 18 years old and are
+              using the app as an employee.
+            </li>
+            <li>
+              You agree to abide by this Agreement and all applicable local,
+              state, national, and international laws, rules, and regulations.
+            </li>
+            <li>
+              You have the legal capacity and authority to enter into this
+              Agreement.
+            </li>
+            <li>
+              If you are an employer, you have the authority to represent the
+              business you are registering.
+            </li>
+            <li>
+              You have not been previously banned or terminated from using Rota
+              IQ for violation of this Agreement.
+            </li>
+          </ul>
+
+          <h2>Your account</h2>
+          <p>
+            To use Rota IQ, you must sign in using your phone number and verify
+            it through a one-time password (OTP) sent via SMS. You are
+            responsible for maintaining the confidentiality of your login
+            credentials and phone number used for Rota IQ. All activities under
+            your account are your sole responsibility. If you suspect
+            unauthorised access to your account, please contact us immediately
+            through the Support option in the app.
+          </p>
+
+          <h3>Account Types:</h3>
+          <ul>
+            <li>
+              <strong>Employer Accounts:</strong> Employers can create and
+              manage businesses, set up job categories and shift types, define
+              staff requirements, generate schedules, manage employees, and
+              track attendance. Employers are responsible for all activities and
+              data associated with their business accounts.
+            </li>
+            <li>
+              <strong>Employee Accounts:</strong> Employees can view their
+              schedules, set availability preferences, clock in and out for
+              shifts, receive notifications, and manage their profile
+              information. Employees can be associated with multiple businesses
+              if they work for different employers.
+            </li>
+          </ul>
+          <p>
+            You are responsible for ensuring that all information you provide is
+            accurate, current, and complete. You must promptly update your
+            account information if it changes.
+          </p>
+
+          <h2>App modification and termination</h2>
+          <p>
+            Rota IQ continuously strives to enhance its app, introducing new
+            features or removing existing ones that may not materially affect
+            your rights or obligations without prior notice. In certain
+            circumstances, such as safety or security concerns, we may suspend
+            the app, notifying you in advance when possible.
+          </p>
+          <p>
+            To terminate your account, you can follow the instructions under the
+            "Settings" section in the app. If you have an active subscription,
+            you will need to cancel your subscription separately (see the
+            Purchases section below). Rota IQ reserves the right to terminate
+            your account at any time without notice if it believes you have
+            violated this Agreement, and no refunds will be provided for
+            purchases unless required by applicable law.
+          </p>
+
+          <h2>Safety and interactions with other users</h2>
+          <p>
+            While Rota IQ provides tools for workforce management and
+            scheduling, we are not responsible for the behavior of users on or
+            off the app. You must exercise appropriate professional conduct in
+            all interactions with other users, whether you are an employer or
+            employee.
+          </p>
+
+          <h3>Employers are responsible for:</h3>
+          <ul>
+            <li>
+              Complying with all applicable employment laws, including but not
+              limited to minimum wage requirements, working time regulations,
+              health and safety obligations, and data protection requirements.
+            </li>
+            <li>
+              Ensuring that schedules generated by the app comply with
+              applicable labor laws and employment contracts.
+            </li>
+            <li>
+              Maintaining appropriate professional relationships with employees.
+            </li>
+            <li>
+              Protecting employee data and privacy in accordance with applicable
+              data protection laws.
+            </li>
+          </ul>
+
+          <h3>Employees are responsible for:</h3>
+          <ul>
+            <li>
+              Accurately reporting their availability and clock-in/out times.
+            </li>
+            <li>
+              Following their assigned schedules and notifying employers of any
+              necessary changes or absences.
+            </li>
+            <li>
+              Maintaining professional conduct in all work-related interactions.
+            </li>
+            <li>
+              Complying with their employment contracts and applicable workplace
+              policies.
+            </li>
+          </ul>
+          <p>
+            You bear sole responsibility for your interactions with other users.
+            Rota IQ does not conduct background checks on users or investigate
+            their backgrounds. Rota IQ makes no representations or warranties
+            regarding user conduct, employment relationships, or compatibility
+            between employers and employees.
+          </p>
+          <p>
+            Rota IQ is not a party to any employment relationship between
+            employers and employees. The app is a tool for scheduling and
+            workforce management, and all employment-related matters, including
+            but not limited to wages, benefits, working conditions, and
+            disputes, are solely between employers and employees.
+          </p>
+
+          <h2>Rights granted by Rota IQ</h2>
+          <p>
+            Rota IQ grants you a personal, worldwide, royalty-free,
+            non-assignable, nonexclusive, revocable, and non-sublicensable
+            license to access and use the app for the purpose of enjoying its
+            intended benefits as described in this Agreement. This license and
+            access authorisation are automatically revoked if you engage in any
+            of the following:
+          </p>
+          <ul>
+            <li>
+              Use the app or its content for commercial purposes beyond managing
+              your own workforce scheduling without our written consent.
+            </li>
+            <li>
+              Copy, modify, transmit, create derivative works from, use, or
+              reproduce copyrighted material, images, trademarks, trade names,
+              service marks, or other intellectual property, content, or
+              proprietary information available through the app without Rota
+              IQ's prior written consent.
+            </li>
+            <li>Imply that your statements are endorsed by Rota IQ.</li>
+            <li>
+              Employ any automatic or manual means to access, retrieve, index,
+              mine data, or circumvent the app's structure or presentation,
+              including the use of robots, bots, spiders, crawlers, scrapers,
+              site search/retrieval applications, proxies, or other devices or
+              methods.
+            </li>
+            <li>
+              Interfere with or disrupt the app or its connected servers or
+              networks in any manner.
+            </li>
+            <li>
+              Upload viruses, malicious code, or compromise the app's security.
+            </li>
+            <li>
+              Forge headers or manipulate identifiers to disguise information
+              origin.
+            </li>
+            <li>
+              "Frame" or "mirror" any part of the app without Rota IQ written
+              authorisation.
+            </li>
+            <li>
+              Use meta tags, code, or devices containing references to Rota IQ
+              or its trademarks, trade names, service marks, logos, or slogans
+              to direct individuals to other websites.
+            </li>
+            <li>
+              Modify, adapt, sublicense, translate, sell, reverse engineer,
+              decipher, decompile, or disassemble any portion of the app or
+              encourage others to do so.
+            </li>
+            <li>
+              Develop third-party applications that interact with the app or
+              other users' content or information without our written consent.
+            </li>
+            <li>
+              Use, access, or publish the app's application programming
+              interface without our written consent.
+            </li>
+            <li>
+              Probe, scan, or test the app or any system or network for
+              vulnerabilities.
+            </li>
+            <li>Promote activities that contravene this Agreement.</li>
+            <li>
+              Use the app to violate any applicable employment, labor, or
+              workplace safety laws.
+            </li>
+            <li>
+              Manipulate or interfere with the scheduling algorithm or system in
+              any way that undermines its intended functionality.
+            </li>
+          </ul>
+          <p>
+            Rota IQ may investigate and take legal action in response to
+            unauthorised or illegal app use, including account termination.
+          </p>
+          <p>
+            Any software provided by Rota IQ may automatically download and
+            install upgrades, updates, or new features. You can adjust these
+            automatic downloads in your device's settings.
+          </p>
+
+          <h2>Your Granted Rights to Rota IQ</h2>
+          <p>
+            By creating an account, you provide Rota IQ with a global,
+            transferable, sub-licensable, royalty-free, and extensive license to
+            host, store, use, copy, display, reproduce, adapt, edit, publish,
+            modify, and distribute any information you post, upload, display, or
+            otherwise share ("post") on the app or transmit to other users
+            (collectively referred to as "Content"). This license granted to
+            Rota IQ is non-exclusive, except when it comes to derivative works
+            created using the app. For instance, Rota IQ would have an exclusive
+            license for screenshots of the app that include your Content.
+            Additionally, to prevent the use of your Content outside of the app,
+            you authorise Rota IQ to act on your behalf regarding any infringing
+            use of your Content by other users or third parties. This includes
+            the authority (but not the obligation) to send notices on your
+            behalf if your Content is used by third parties outside of the app.
+            Our license to your Content is subject to your rights under
+            applicable law (e.g., laws regarding personal data protection, if
+            your Content contains personal information as defined by those laws)
+            and is solely for the purpose of operating, developing, providing,
+            improving the app, and conducting research for new features. You
+            acknowledge that any Content you post or authorise us to post on the
+            app may be viewed by other users and individuals participating in
+            the app (including employers, employees, and other authorized users
+            within your business).
+          </p>
+          <p>
+            You affirm that all information submitted during the creation of
+            your account is accurate, truthful, and that you have the right to
+            post the Content on the app and grant the aforementioned license to
+            Rota IQ.
+          </p>
+          <p>
+            You acknowledge and accept that we may monitor or review any Content
+            you post on the app. We retain the right to delete any Content,
+            either in part or in whole, that we, in our sole judgment, believe
+            violates this Agreement or may harm the app's reputation.
+          </p>
+          <p>
+            When communicating with our support representatives, you commit to
+            being respectful and courteous. Should we deem your behavior towards
+            any of our support representatives or other employees as
+            threatening, harassing, or offensive, we retain the right to
+            promptly terminate your account.
+          </p>
+          <p>
+            As a consideration for using the app, you agree that Rota IQ, its
+            affiliates, and third-party partners may display advertising within
+            the app (where applicable). By submitting suggestions or feedback
+            regarding our app to Rota IQ, you grant Rota IQ permission to use
+            and share such feedback for any purpose without compensation.
+          </p>
+          <p>
+            Please be informed that Rota IQ may access, store, and disclose your
+            account information and Content when required by law, to fulfill our
+            agreement with you, or in good faith belief that such access,
+            storage, or disclosure serves a legitimate interest. This includes:
+            (i) complying with legal processes, (ii) enforcing this Agreement,
+            (iii) addressing claims of Content violating third-party rights,
+            (iv) responding to your customer service requests, or (v)
+            safeguarding the rights, property, or personal safety of Rota IQ or
+            any other person.
+          </p>
+
+          <h2>Community Rules</h2>
+          <p>By using the app, you pledge not to:</p>
+          <ul>
+            <li>
+              Use the app for any purpose that is illegal or forbidden by this
+              Agreement.
+            </li>
+            <li>Employ the app for any harmful or malicious purpose.</li>
+            <li>Use the app to cause damage to Rota IQ.</li>
+            <li>
+              Engage in spamming, soliciting money, or defrauding other users.
+            </li>
+            <li>
+              Impersonate any individual or entity or post images of another
+              person without their permission.
+            </li>
+            <li>
+              Engage in bullying, stalking, intimidation, assault, harassment,
+              mistreatment, or defamation of any person.
+            </li>
+            <li>
+              Post Content that violates or infringes on anyone's rights,
+              including rights of publicity, privacy, copyright, trademark, or
+              other intellectual property or contract rights.
+            </li>
+            <li>
+              Share Content that constitutes hate speech, threats, sexually
+              explicit or pornographic material.
+            </li>
+            <li>
+              Post Content that incites violence, contains nudity, or graphic or
+              gratuitous violence.
+            </li>
+            <li>
+              Share Content that promotes racism, bigotry, hatred, or physical
+              harm of any kind against any group or individual.
+            </li>
+            <li>
+              Request passwords or personal identifying information from other
+              users for commercial or unlawful purposes or disclose another
+              person's personal information without their consent.
+            </li>
+            <li>
+              Use another member's account, share an account with another
+              member, or maintain more than one account for the same purpose.
+            </li>
+            <li>
+              Create a new account if your previous account has been terminated,
+              unless you obtain our permission.
+            </li>
+            <li>
+              Manipulate scheduling data, availability information, or time
+              tracking records in a fraudulent or deceptive manner.
+            </li>
+            <li>
+              Use the app to violate any employment, labor, or workplace safety
+              laws or regulations.
+            </li>
+            <li>
+              Interfere with the proper functioning of the scheduling algorithm
+              or system.
+            </li>
+          </ul>
+          <p>
+            Rota IQ reserves the right to investigate and possibly terminate
+            your account without issuing a refund for any purchases if you have
+            violated this Agreement, misused the app, or engaged in behaviour
+            that Rota IQ deems inappropriate or unlawful, whether on or off the
+            app.
+          </p>
+
+          <h2>Content Posted by Other Users</h2>
+          <p>
+            While Rota IQ retains the right to review and remove Content that
+            violates this Agreement, the sole responsibility for such Content
+            lies with the user who posts it. Rota IQ cannot guarantee that all
+            Content will conform to this Agreement. If you come across Content
+            on the app that violates this Agreement, please report it directly
+            within the app or through our Support option accessible from the
+            sidebar menu.
+          </p>
+
+          <h2>Scheduling and Workforce Management</h2>
+          <p>
+            Rota IQ provides AI-powered scheduling tools to assist employers in
+            creating employee schedules. However:
+          </p>
+          <ul>
+            <li>
+              <strong>Scheduling Responsibility:</strong> Employers are solely
+              responsible for reviewing, approving, and ensuring the accuracy
+              and legality of all schedules generated by the app. Rota IQ does
+              not guarantee that generated schedules will be optimal,
+              error-free, or compliant with all applicable laws or employment
+              contracts.
+            </li>
+            <li>
+              <strong>Algorithm Limitations:</strong> The scheduling algorithm
+              is a tool that considers availability, staffing requirements, and
+              other factors, but it may not account for all business-specific
+              needs, preferences, or constraints. Employers should review and
+              adjust generated schedules as necessary.
+            </li>
+            <li>
+              <strong>Time Tracking:</strong> Clock-in and clock-out
+              functionality is provided for convenience, but employers are
+              responsible for verifying the accuracy of time records and
+              ensuring compliance with applicable wage and hour laws. Rota IQ is
+              not responsible for payroll calculations or wage disputes.
+            </li>
+            <li>
+              <strong>Availability Management:</strong> Employees are
+              responsible for accurately reporting their availability. Employers
+              are responsible for considering employee availability when
+              creating schedules, subject to applicable employment laws and
+              contracts.
+            </li>
+          </ul>
+          <p>
+            Rota IQ is not liable for any scheduling errors, conflicts, or
+            issues that arise from the use of the scheduling features, and
+            employers and employees should resolve scheduling disputes directly
+            between themselves.
+          </p>
+
+          <h2>Purchases</h2>
+
+          <h3>In General</h3>
+          <p>
+            Periodically, Rota IQ may offer products and services for purchase
+            ("in-app purchases") through authorised payment platforms such as
+            the App Store, Google Play Store, Stripe, or others designated by
+            Rota IQ. When you opt to make an in-app purchase, you will be
+            prompted to confirm your purchase with the relevant payment
+            provider. Your Payment Method (which could be a third-party account
+            like the Google Play Store, App Store, or a credit card processed
+            through Stripe) will be charged for the selected service(s),
+            including any applicable sales taxes, as displayed to you. By
+            proceeding, you authorise Rota IQ or the relevant third-party
+            account to initiate the charge.
+          </p>
+
+          <h3>Subscriptions</h3>
+          <p>
+            Rota IQ may offer subscription plans for employers to access premium
+            features, increased capacity, or enhanced functionality.
+            Subscription plans may vary in price, features, and duration.
+          </p>
+
+          <h3>Auto-Renewal and automatic card payments</h3>
+          <p>
+            If you acquire a recurring subscription through an in-app purchase,
+            your Payment Method will continue to be charged until you cancel it.
+            After your initial subscription period ends, your subscription will
+            automatically renew at the agreed-upon price unless canceled before
+            the renewal date. Your card payment information will be stored and
+            used for automatic card payments in accordance with the Agreement
+            and applicable payment processor terms.
+          </p>
+          <p>
+            Any objections to a payment made should be directed to Support if
+            Rota IQ billed you directly or to the relevant third-party account,
+            such as the App Store or Google Play Store. You can also dispute the
+            charge by contacting your bank or payment provider, who can provide
+            more information on your rights and applicable time limits. You can
+            withdraw your consent to automatic card payments at any time by
+            visiting the relevant third-party account or by canceling your
+            subscription through the app. Please note that you are still
+            responsible for any outstanding amounts.
+          </p>
+          <p>
+            If you wish to modify or terminate your subscription, the easiest
+            method is to log in to your third-party account (App Store or Google
+            Play Store) and follow the instructions for cancellation, or cancel
+            through the Rota IQ app settings, even if you have previously
+            deleted your Rota IQ account or the Rota IQ application from your
+            device. Deleting your Rota IQ account or the app from your device
+            does not cancel your subscription. Rota IQ will retain all funds
+            charged to your Payment Method until you cancel your subscription on
+            Rota IQ or the third-party account, as applicable. Upon
+            cancellation, you can continue using your subscription until the end
+            of the current term, and it will not renew thereafter.
+          </p>
+
+          <h3>Refunds</h3>
+          <p>
+            Generally, all charges for purchases are nonrefundable, and no
+            refunds or credits are provided for partially used periods, unless
+            required by applicable law. Exceptions may apply based on the laws
+            of your jurisdiction. To request a refund:
+          </p>
+          <ul>
+            <li>
+              For purchases made with your Apple ID, Apple handles refunds.
+              Visit the App Store, select your Apple ID, click "Purchase
+              history," locate the transaction, and choose "Report Problem."
+              Alternatively, you can submit a request at
+              https://getsupport.apple.com.
+            </li>
+            <li>
+              For purchases made through your Google Play Store account, please
+              contact Google Play Support and provide your Google Play Store
+              order number (found in the order confirmation email or by logging
+              into Google Wallet).
+            </li>
+            <li>
+              For purchases made directly through Rota IQ using Stripe or other
+              payment processors, please contact Support and provide your
+              transaction details.
+            </li>
+            <li>
+              If you exercise your right of cancellation (where applicable,
+              except for purchases made through your Apple ID or Google Play
+              Store, which are managed by those platforms), we will refund all
+              payments received from you without undue delay and within 14 days
+              from receiving notice of your decision to cancel. The refund will
+              be made using the same payment method as your initial transaction,
+              and no fees will be charged to you as a result.
+            </li>
+          </ul>
+          <p>
+            If you made a purchase through a payment platform not mentioned
+            above, please request a refund directly from the third-party
+            merchant you used for your purchase.
+          </p>
+
+          <h3>Pricing</h3>
+          <p>
+            Rota IQ operates globally, and pricing varies due to various
+            factors. Promotional rates are frequently offered and can differ
+            based on region, subscription duration, plan features, and other
+            factors. We also regularly test new features and payment options.
+          </p>
+
+          <h2>Notice and Procedure for Copyright Infringement Claims</h2>
+          <p>
+            If you believe your work has been copied and posted on the app in a
+            way that constitutes copyright infringement, please contact Support.
+          </p>
+          <p>
+            When reaching out to us about alleged copyright infringement, please
+            provide the following details:
+          </p>
+          <ul>
+            <li>
+              An electronic or physical signature of the authorised person
+              acting on behalf of the copyright holder.
+            </li>
+            <li>
+              A description of the copyrighted work you claim has been
+              infringed.
+            </li>
+            <li>
+              Information about where the allegedly infringing material is
+              located on the app (sufficient for us to locate it).
+            </li>
+            <li>
+              Your contact information, including address, telephone number,
+              email address, and the identity of the copyright owner.
+            </li>
+            <li>
+              A statement by you, under penalty of perjury, that you believe the
+              disputed use is not authorised by the copyright owner, its agent,
+              or the law, and that the information in your notice is accurate.
+            </li>
+          </ul>
+          <p>Rota IQ will terminate accounts of repeat infringers.</p>
+
+          <h2>Disclaimers</h2>
+          <p>
+            Rota IQ offers the service on an "as is" and "as available" basis
+            and, to the extent permitted by applicable law, provides no
+            warranties of any kind, whether express, implied, statutory, or
+            otherwise, regarding the service (including all content therein).
+            This includes, without limitation, any implied warranties of
+            satisfactory quality, merchantability, fitness for a particular
+            purpose, or non-infringement. Rota IQ does not guarantee that (A)
+            the app will be uninterrupted, secure, or error-free, (B) any
+            defects or errors in the app will be rectified, or (C) any content
+            or information obtained through the app will be accurate.
+          </p>
+          <p>
+            Rota IQ does not assume responsibility for any content posted, sent,
+            or received by you, another user, or a third party via the app. Any
+            materials downloaded or obtained through app usage are done at your
+            own discretion and risk.
+          </p>
+          <p>
+            Rota IQ does not guarantee the accuracy, completeness, or legality
+            of schedules generated by the app. Employers are solely responsible
+            for reviewing and approving all schedules and ensuring compliance
+            with applicable employment laws and contracts.
+          </p>
+          <p>
+            Rota IQ is not responsible for employment relationships, wage
+            disputes, workplace safety issues, or any other matters between
+            employers and employees. The app is a tool for scheduling and
+            workforce management, and all employment-related matters are solely
+            between employers and employees.
+          </p>
+
+          <h2>Third-Party Services</h2>
+          <p>
+            The app may display advertisements and promotions provided by third
+            parties and contain links to external websites or resources. Rota IQ
+            does not control the availability (or unavailability) of such
+            external sites or resources. When you choose to engage with third
+            parties made accessible through our app, their terms and conditions
+            will govern your interaction. Rota IQ is not liable or responsible
+            for the actions or terms of such third parties.
+          </p>
+          <p>The app uses third-party services including but not limited to:</p>
+          <ul>
+            <li>
+              <strong>Firebase (Google):</strong> For authentication, data
+              storage, cloud functions, and push notifications. By using the
+              app, you are also bound by Google's Terms of Service and Privacy
+              Policy where applicable.
+            </li>
+            <li>
+              <strong>Stripe:</strong> For payment processing. Payment
+              transactions are subject to Stripe's Terms of Service and Privacy
+              Policy.
+            </li>
+            <li>
+              <strong>Other service providers:</strong> The app may use
+              additional third-party services for analytics, error tracking, and
+              other functionality, each subject to their respective terms and
+              privacy policies.
+            </li>
+          </ul>
+
+          <h2>Limitation of Liability</h2>
+          <p>
+            To the fullest extent allowed by applicable law, Rota IQ, its
+            affiliates, employees, licensors, or service providers shall not be
+            liable for indirect, consequential, exemplary, incidental, special,
+            punitive, or enhanced damages, including loss of profits, whether
+            incurred directly or indirectly, or any loss of data, use, goodwill,
+            or other intangible losses. Such damages may arise from (I) your
+            access to or use of the app, (II) the conduct or content of other
+            users or third parties on, through, or following app usage, (III)
+            unauthorised access, use, or alteration of your content, (IV)
+            scheduling errors, conflicts, or issues arising from use of the
+            scheduling features, (V) employment-related disputes or issues
+            between employers and employees, or (VI) any errors or inaccuracies
+            in the scheduling algorithm or generated schedules, even if Rota IQ
+            has been advised of the possibility of such damages. In no event
+            shall Rota IQ's total liability for all claims relating to the app
+            exceed the greater of the amount you paid (if any) to Rota IQ for
+            the app while you held an account, or £100.
+          </p>
+          <p>
+            Some jurisdictions do not permit the exclusion or limitation of
+            specific damages, so certain exclusions and limitations in this
+            section may not apply to you.
+          </p>
+
+          <h2>Indemnity by You</h2>
+          <p>
+            To the extent allowed by applicable law, you agree to indemnify,
+            defend, and hold harmless Rota IQ, our affiliates, and our
+            respective officers, directors, agents, and employees from and
+            against any and all complaints, demands, claims, damages, losses,
+            costs, liabilities, and expenses, including attorney's fees, arising
+            out of or relating to your access to or use of the app, your
+            content, your breach of this Agreement, your employment
+            relationships or practices, or any disputes between you and other
+            users (whether employers or employees).
+          </p>
+
+          <h2>Entire Agreement; Other</h2>
+          <p>
+            This Agreement, comprising the Privacy Policy, as well as any terms
+            you agree to when purchasing additional features, products, or
+            services on the app, constitutes the complete agreement between you
+            and Rota IQ regarding app usage. If any provision of this Agreement
+            is found invalid, the remaining terms shall remain in full force and
+            effect. The Company's failure to enforce any right or provision in
+            this Agreement shall not constitute a waiver of such right or
+            provision. You acknowledge that your Rota IQ account is
+            non-transferable, and your rights to your account and its content
+            terminate upon your passing. No agency, partnership, joint venture,
+            fiduciary, or other special relationship or employment is
+            established by this Agreement, and you may not represent or bind
+            Rota IQ in any manner.
+          </p>
+
+          <h2>Governing Law and Dispute Resolution</h2>
+          <p>
+            This Agreement shall be governed by and construed in accordance with
+            the laws of England and Wales, without regard to its conflict of law
+            provisions. Any disputes arising out of or relating to this
+            Agreement or the app shall be resolved through the courts of England
+            and Wales.
+          </p>
+
+          <h2>Contact Information</h2>
+          <p>
+            If you have any questions, concerns, or requests regarding this
+            Agreement, please contact us through the Support option in the Rota
+            IQ app or via email at support@officialsharx.com.
+          </p>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default RotaIQTermsConditions;

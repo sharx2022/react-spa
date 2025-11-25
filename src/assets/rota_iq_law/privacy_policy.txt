@@ -1,0 +1,175 @@
+Privacy Policy
+Introduction
+When you use Rota IQ, you place your trust in us with your personal data, and we take this trust seriously. Therefore, it's important for us to provide you with a clear understanding of our privacy practices. This notice outlines the personal data we gather, how we utilize and share it, and the choices you have concerning your data. We encourage you to carefully review this section to gain a better grasp of our approach to privacy.
+
+Overview
+Scope
+This notice is intended for users of Rota IQ who utilise the mobile application and its associated features. It specifically pertains to "employers" and "employees" who use Rota IQ to manage workforce scheduling, employee availability, shift assignments, and time tracking.
+
+Our privacy practices adhere to the relevant laws of the jurisdictions in which we operate. This implies that we engage in the practices described in this notice only to the extent allowed by applicable law, including but not limited to the General Data Protection Regulation (GDPR) in the European Union and the United Kingdom, and other applicable data protection laws.
+
+Data controller
+SHARX LTD (or the applicable entity operating Rota IQ in your jurisdiction) is the designated data controller responsible for data collected from Rota IQ's services. Rota IQ only shares personal data with law enforcement agencies in compliance with the regulatory requirements of applicable laws, such as the GDPR.
+
+To ensure data protection when you use our services, Rota IQ has implemented the following safeguards:
+Data is safeguarded during transmission between the Rota IQ app and our servers, as well as during processing on our servers. This includes encryption using HTTPS/TLS to prevent unauthorised disclosure of users' personal information.
+Policies and procedures are in place to restrict access to and processing of personal data for specific purposes.
+Regular security assessments and updates to maintain the integrity of our data protection measures.
+
+Data collection and use
+Rota IQ collects data in two main ways:
+
+Data Provided by Users to Rota IQ: This includes information users provide during account creation and profile setup, such as:
+Profile Information: First name, last name, mobile phone number, and role (employer or employee).
+Business Information: For employers, this includes business name, industry, sub-industry, and unlock codes for employee access.
+Job Category Information: For businesses, this includes job category names, descriptions, and color codes.
+Shift Type Information: For businesses, this includes shift type names, start times, end times, descriptions, and version history.
+Availability Information: For employees, this includes weekly availability preferences, including dates and shift type preferences.
+Join Request Information: When employees request to join a business, this includes their name and mobile number.
+
+Data created during use of our service:
+Authentication Data: Phone number verification codes (OTP) used for account authentication and security.
+Schedule Data: Information about scheduled shifts, including employee assignments, job categories, shift types, start times, end times, and any schedule modifications.
+Time Tracking Data: Clock-in and clock-out times recorded by employees for their scheduled shifts, including timestamps and associated shift information.
+Staff Requirement Data: Information about required staffing levels by job category and shift type for specific dates.
+Usage Data: Information about how users interact with our app, encompassing app crashes, feature usage, navigation patterns, and other system activities.
+Device Data: Data about the devices used to access our app, including hardware models, operating systems, versions, device identifiers, and advertising identifiers (where applicable).
+Notification Data: Push notification tokens (FCM tokens) used to send notifications about shifts, schedule changes, clock-in reminders, and other app-related communications.
+Communication Data: Information concerning communications between employers and employees within the app, including join requests, acceptance/rejection of requests, and any in-app messaging features.
+Subscription and Payment Data: For employers with subscriptions, this includes subscription status, payment method information (processed securely through third-party payment processors), billing dates, and transaction history.
+Location Data: If you grant us permission via your device settings, we may collect location information for features such as clock-in/out verification or location-based scheduling features. This data is collected only when you actively use these features and is retained only as necessary for the functionality.
+Camera Data: If you grant us permission, we may access your device's camera for features such as scanning QR codes for clock-in/out verification or capturing profile pictures. Images are processed locally on your device or stored securely if uploaded to your profile.
+
+How we use personal Data. Rota IQ employs personal data to facilitate a reliable and efficient workforce management and scheduling service. Additionally, we utilise this data for the following purposes:
+To provide and improve our scheduling and workforce management services.
+To enhance safety and security within our services.
+For customer support.
+To facilitate communications between employers and employees.
+For marketing and advertising (with your consent where required).
+To send non-marketing communications to users.
+In connection with legal proceedings and compliance.
+
+Our usage of collected data is as follows:
+
+Providing Our Services: Rota IQ utilises data to deliver, uphold, and enhance our services. This encompasses activities such as:
+Creating and updating user accounts and profiles.
+Creating and managing business accounts and associated data.
+Generating automated schedules using AI-powered algorithms based on employee availability and business requirements.
+Matching employees to shifts based on availability, job categories, and staffing requirements.
+Enabling time tracking through clock-in and clock-out functionality.
+Sending notifications about upcoming shifts, schedule changes, clock-in reminders, and other important updates.
+Processing subscription payments and managing billing for employers.
+Facilitating employee join requests and business access through unlock codes.
+Undertaking essential operations to maintain our services, including resolving software glitches and operational issues.
+Analyzing usage patterns to improve our scheduling algorithms and app functionality.
+
+Rota IQ performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users, are compatible with such uses, or on the grounds that they are necessary for purposes of Rota IQ's and its users' legitimate interests.
+
+Safety and Security: We use data to uphold the safety, security, and integrity of our services and users. This involves:
+Monitoring for fraudulent activity, unauthorized access, or misuse of the service.
+Implementing security measures to protect user data and prevent data breaches.
+Investigating and responding to security incidents or violations of our Terms of Service.
+Maintaining audit logs of user activities for security and compliance purposes.
+Enforcing business access controls and verifying user identities.
+
+Rota IQ performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users, and/or for purposes of the legitimate safety and security interests of Rota IQ, our users and members of the general public.
+
+Customer Support: Information collected is used to provide customer support, including investigating and addressing user concerns, technical issues, and account-related inquiries.
+
+Rota IQ performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users or for purposes of Rota IQ's legitimate interest in monitoring and improving its customer support services.
+
+Enabling User Communications: Data is used to facilitate communications between employers and employees, such as:
+Sending notifications about schedule changes, shift assignments, and availability requests.
+Facilitating join requests and business access management.
+Enabling in-app messaging features (where available).
+
+Rota IQ performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users.
+
+Marketing and Advertising: Data may be employed for marketing our services (with your consent where required by law). This may include:
+Sending emails, text messages, push notifications, or other communications for marketing or advertising Rota IQ products, services, features, offers, promotions, news, and events.
+Personalizing marketing content based on your usage patterns and preferences.
+
+Rota IQ performs the above activities on the grounds that they are necessary for purposes of Rota IQ's legitimate interests in informing users about Rota IQ services and features, or with your explicit consent where required by applicable law.
+
+Non-Marketing Communications: Data may be used to dispatch surveys, service updates, and other communications unrelated to service marketing.
+
+Rota IQ performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users, or for purposes of Rota IQ's and its users' legitimate interests in informing users about events that may have an impact on their use of Rota IQ services.
+
+Legal Proceedings and Requirements: Data is used to investigate or address claims, meet obligations under applicable laws, regulations, or operating licenses, respond to legal processes or governmental requests (including from law enforcement), and address disputes related to the use of Rota IQ's services.
+
+Rota IQ performs the above activities on the grounds that they are necessary for purposes of Rota IQ's legitimate interests in investigating and responding to claims and disputes relating to use of Rota IQ's services and features, and/or necessary for compliance with applicable legal requirements.
+
+Data Sharing and Disclosure
+Certain Rota IQ services and features necessitate data sharing with other users and service providers. Rota IQ may share data as follows:
+
+With Other Users: 
+For Employers: Employers can view employee information necessary for scheduling, including employee names, availability, assigned shifts, clock-in/out times, and job category assignments within their business.
+For Employees: Employees can view their own schedule information, availability settings, and clock-in/out records. Employees may also see limited business information (such as business name) for businesses they are associated with.
+Business Information: Business details, unlock codes, and staffing requirements are accessible to authorized employers and employees within that business.
+
+With Rota IQ Service Providers and Business Partners: This encompasses:
+Payment Processors: Stripe and other payment facilitators for processing subscription payments and managing billing.
+Cloud Storage Providers: Firebase (Google Cloud Platform) for data storage, authentication, and backend services.
+Analytics Providers: Services that help us understand app usage and improve our services (data is anonymized where possible).
+Notification Services: Firebase Cloud Messaging for delivering push notifications.
+Hosting and Infrastructure Providers: Services that host our application and infrastructure.
+
+For Legal Reasons or in Disputes: Rota IQ may share users' data if required by applicable law, regulations, operating licenses, legal processes, governmental requests, or safety concerns. This includes sharing data with law enforcement, government authorities, or other third parties when necessary to enforce our Terms of Service, user agreements, or policies, protect Rota IQ's rights or property, or resolve disputes.
+
+This also includes sharing data with others in connection with, or during negotiations of, any merger, sale of company assets, consolidation or restructuring, financing, or acquisition of all or a portion of our business by or into another company.
+
+With Consent: Rota IQ may share a user's data other than as described in this notice if we notify the user and they consent to the sharing.
+
+Data Retention and Deletion 
+Rota IQ retains user data for the duration necessary for the purposes outlined above, including the provision of its services and adherence to legal obligations. For example:
+We maintain data for the duration of users' accounts if it is essential for the provision of our services, such as user profile information, credentials, schedules, and time tracking records.
+Historical schedule and time tracking data may be retained for payroll, compliance, and business record-keeping purposes as required by applicable employment and tax laws.
+Subscription and payment data may be retained as required by financial regulations and for accounting purposes.
+
+Users can request the deletion of their accounts at any time. Following a deletion request:
+We will delete or anonymize personal data that is not required to be retained for legal or legitimate business purposes.
+Some data may be retained for a limited period (typically 30-90 days) to ensure safety, security, fraud prevention, and to comply with legal obligations.
+Historical schedule and time tracking data may need to be retained in anonymized form for business and legal compliance purposes.
+Users can request the deletion of their accounts anytime by navigating to Settings > Delete account in the Rota IQ app, or by contacting our support team.
+
+Third Party Services
+Rota IQ app uses the following third-party services, and users should be aware of their respective privacy policies:
+
+Firebase Services (Google): Rota IQ uses Firebase for authentication, data storage (Firestore), cloud functions, push notifications (Firebase Cloud Messaging), and remote configuration. This means that data processing is subject to Google's Privacy Policy. More details can be found in the Google Privacy Policy and Firebase Terms of Service.
+
+Stripe: Rota IQ uses Stripe for payment processing and subscription management. Payment information is processed securely by Stripe in accordance with their Privacy Policy and security standards. Rota IQ does not store complete payment card information on its servers.
+
+Other Service Providers: Rota IQ may use additional third-party services for analytics, error tracking, and service improvement. These services are bound by their respective privacy policies and data processing agreements.
+
+Choice and Transparency
+Rota IQ empowers users to access and/or manage the data collected by Rota IQ, including through:
+
+Device Permissions
+Most mobile device platforms (iOS, Android, etc.) specify certain types of device data that apps cannot access without the device owner's consent, and these platforms have varying procedures for obtaining such consent. Rota IQ requests the following permissions:
+Phone: Required for phone number verification during account creation and authentication.
+Camera: Optional, for scanning QR codes for clock-in/out verification and capturing profile pictures.
+Notifications: Required for receiving push notifications about shifts, schedule changes, and important updates.
+Location: Optional, for location-based features such as clock-in/out verification (if implemented).
+
+You can manage these permissions through your device's settings. Please check your device's settings or contact your provider for further information.
+
+User Data Requests
+Rota IQ provides users with ways to learn about, control, and raise questions and concerns regarding the handling of their data.
+
+Accessing Data: Users can access their data, including profile data, schedule information, availability settings, and time tracking records, via the Rota IQ app (Dashboard, Profile Settings, Schedule views).
+
+Data Portability: Users can request a copy of their data in a machine-readable format by contacting Rota IQ via email or through the Support option in the app.
+
+Editing or Updating Data: Users can modify their account details, such as name, phone number, availability preferences, and profile information, through the Settings menu in the Rota IQ app. Employers can also manage business information, job categories, shift types, and staff requirements through the app.
+
+Deleting Data: Users may request the deletion of their account at any time by using the Settings > Delete account option in the Rota IQ app, or by contacting our support team. Note that some data may be retained as described in the Data Retention and Deletion section above.
+
+Objections, Restrictions, and Complaints: Users have the option to request the cessation of all or some of their data usage, or to limit its usage. This includes objecting to data usage based on Rota IQ's legitimate interests. Rota IQ may continue processing data after such objection or request to the extent required or permitted by law. Additionally, users may have the right to file a complaint regarding Rota IQ's data handling with the data protection authority in their country (such as the Information Commissioner's Office in the UK or the relevant supervisory authority in the EU).
+
+Notification Preferences: Users can manage their notification preferences through the app settings to control what types of notifications they receive.
+
+Updates to this notice
+We may periodically update this notice. In the event of significant changes, we will inform users in advance of such changes via the Rota IQ app or through other means like email. We encourage users to periodically review this notice for the latest information on our privacy practices. Use of our services following an update constitutes consent to the revised notice to the extent permitted by law.
+
+Contact Information
+If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us through the Support option in the Rota IQ app or via email at [support email address].

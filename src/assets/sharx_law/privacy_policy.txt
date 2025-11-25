@@ -1,0 +1,79 @@
+Privacy Policy
+Introduction
+When you use sharx, you place your trust in us with your personal data, and we take this trust seriously. Therefore, it’s important for us to provide you with a clear understanding of our privacy practices. This notice outlines the personal data we gather, how we utilize and share it, and the choices you have concerning your data. We encourage you to carefully review this section to gain a better grasp of our approach to privacy.
+Overview
+Scope
+This notice is intended for users of sharx in the United Kingdom who utilise the mobile application and its associated features. It specifically pertains to “riders,” individuals who seek co-riders through their sharx accounts.
+Our privacy practices adhere to the relevant laws of the United Kingdom. This implies that we engage in the practices described in this notice only to the extent allowed by UK law.
+Data controller
+SHARX LTD is the designated data controller responsible for data collected from sharx’s services in the United Kingdom. sharx only shares personal data with law enforcement agencies in compliance with the regulatory requirements of applicable laws, such as the GDPR.
+To ensure data protection when you use our services, sharx has implemented the following safeguards:
+Data is safeguarded during transmission between the sharx app and our servers, as well as during processing on our servers. This includes encryption to prevent unauthorised disclosure of users’ complete identities.
+Policies and procedures are in place to restrict access to and processing of personal data for specific purposes.
+Data collection and use
+Sharx collects data in two main ways:
+Data Provided by Users to sharx: This includes information users provide during profile creation, such as their name, email, phone number, address, and profile picture
+Data created during use of our service:
+Demographic Data: Information such as date of birth and gender.
+Travel Information: Details about upcoming trips, including dates and times, which users manually input into the sharx app.
+Location Data: Location information collected from users’ mobile devices if they grant us permission via their device settings. This data is collected from the moment a user searches for riders and selects their current location as the starting or ending point of their trip. It is retained until the user deletes the search or the trip concludes.
+Transaction Information: Data related to payment transactions for packages users purchase, including package selection, amount charged, payment method, date, and time.
+Usage Data: Information about how users interact with our app, encompassing app crashes and other system activities.
+Device Data: Data about the devices used to access our app, including hardware models, operating systems, versions, and advertising identifiers.
+Communications Data: Information concerning in-app communications between users, including timestamps and message content.
+How we use personal Data. Sharx employs personal data to facilitate a dependable and convenient taxi-sharing service. Additionally, we utilise this data for the following purposes:
+To enhance safety and security within our services.
+For customer support.
+To facilitate communications between users.
+For marketing and advertising.
+To send non-marketing communications to users.
+In connection with legal proceedings.
+Our usage of collected data is as follows:
+Providing Our Services: Sharx utilises data to deliver, uphold, and enhance our services. This encompasses activities such as:
+Creating and updating accounts.
+Employing location data to gauge users’ proximity.
+Matching available riders based on factors like availability and location.
+Enabling data sharing features, such as revealing a user’s first name and rating to aid in matching.
+Processing payments.
+Undertaking essential operations to maintain our services, including resolving software glitches and operational issues.
+Sharx performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users, are compatible with such uses, or on the grounds that they are necessary for purposes of sharx’s and its users’ legitimate interests.
+Safety and Security: We use data to uphold the safety, security, and integrity of our services and users. This involves:
+Leveraging user ratings, reports, and other feedback to promote compliance with our values and principles and as a basis for suspending or banning users with multiple reports against them.
+Sharx performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users, and/or for purposes of the legitimate safety and security interests of sharx, our users and members of the general public.
+Customer Support: Information collected is used to provide customer support, including investigating and addressing user concerns.
+Sharx performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users or for purposes of sharx’s legitimate interest in monitoring and improving its customer support services.
+Enabling User Communications: For instance, one user might message another user to coordinate their shared ride.
+Sharx performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users.
+Marketing and Advertising: Data is employed for marketing our services. This may include:
+Sending emails, text messages, push notifications, or other communications for marketing or advertising sharx products, services, features, offers, promotions, news, and events.
+Sharx performs the above activities on the grounds that they are necessary for purposes of Uber’s legitimate interests in informing users about sharx services and features
+Non-Marketing Communications: Data may be used to dispatch surveys and other communications unrelated to service marketing.
+Sharx performs the above activities on the grounds that they are necessary to fulfil the terms of our agreements with users, or for purposes of sharx’s and its users’ legitimate interests in informing users about events that may have an impact on their use of sharx services.
+Legal Proceedings and Requirements: Data is used to investigate or address claims, meet obligations under applicable laws, regulations, or operating licenses, respond to legal processes or governmental requests (including from law enforcement), and address disputes related to the use of sharx’s services.
+Sharx performs the above activities on the grounds that they are necessary for purposes of sharx’s legitimate interests in investigating and responding to claims and disputes relating to use of sharx’s services and features, and/or necessary for compliance with applicable legal requirements.
+Data Sharing and Disclosure
+Certain sharx services and features necessitate data sharing with other users. Sharx may share data as follows:
+With Other Users: This includes sharing users’ first name, the first letter of users’ last name, rating, and distance from other users. Such information is shared when users are searching for co-riders.
+With sharx Service Providers and Business Partners: This encompasses payment processors and facilitators, cloud storage providers, and Google (refer to Google’s privacy policy for data collection and usage details).
+For Legal Reasons or in Disputes: Sharx may share users’ data if required by applicable law, regulations, operating licenses, legal processes, governmental requests, or safety concerns. This includes sharing data with law enforcement, government authorities, airports, or other third parties when necessary to enforce our Terms of Service, user agreements, or policies, protect sharx’s rights or property, or resolve disputes.
+This also includes sharing data with others in connection with, or during negotiations of, any merger, sale of company assets, consolidation or restructuring, financing, or acquisition of all or a portion of our business by or into another company.
+With Consent: Sharx may share a user’s data other than as described in this notice if we notify the user and they consent to the sharing.
+Data Retention and Deletion 
+Sharx retains user data for the duration necessary for the purposes outlined above, including the provision of its services and adherence to legal obligations. For example, we maintain data for the duration of users’ accounts if it is essential for the provision of our services, such as user profile information and credentials. Users can request the deletion of their accounts at any time. Following a deletion request, sharx retains user data for 30 days to ensure safety, security, and fraud prevention. Users can request the deletion of their accounts anytime by navigating to Settings > Delete account in the sharx app.
+Third Party Services
+Sharx app uses google services ( The Google Maps API(s)) which means that is bind to the related Google Privacy Policy and users should follow the guidelines. More details can be found in the Google Privacy Policy.
+Choice and Transparency
+Sharx empowers users to access and/or manage the data collected by sharx, including through:
+Device Permissions
+Most mobile device platforms (iOS, Android, etc.) specify certain types of device data that apps cannot access without the device owner’s consent, and these platforms have varying procedures for obtaining such consent. Please check your device’s settings or contact your provider for further information.
+In-App Ratings Pages
+Following each connection, users can rate each other on a scale from 1 to 5. An average of these ratings is linked to a user’s account and is visible to other users. For instance, user ratings are accessible to other users while searching for co-riders. This system fosters accountability for behavior, contributing to a respectful and secure environment for users. Users can view their average rating in the sharx app’s Dashboard.
+User Data Requests
+Sharx provides users with ways to learn about, control, and raise questions and concerns regarding the handling of their data.
+Accessing Data: Users can access their data, including profile data, via the sharx app (Dashboard, Profile Settings).
+Data Portability: Users can request a copy of their data by contacting Sharx via email.
+Editing or Updating Data: Users can modify their account details, such as name, home/work address, email address, and photo, through the Settings menu in the sharx app.
+Deleting Data: Users may request the deletion of their account at any time by using the Settings > Delete account option in the sharx app.
+Objections, Restrictions, and Complaints: Users have the option to request the cessation of all or some of their data usage, or to limit its usage. This includes objecting to data usage based on sharx’s legitimate interests. Sharx may continue processing data after such objection or request to the extent required or permitted by law. Additionally, users may have the right to file a complaint regarding sharx’s data handling with the data protection authority in their country.
+Updates to this notice
+We may periodically update this notice. In the event of significant changes, we will inform users in advance of such changes via the sharx app or through other means like email. We encourage users to periodically review this notice for the latest information on our privacy practices. Use of our services following an update constitutes consent to the revised notice to the extent permitted by law.
