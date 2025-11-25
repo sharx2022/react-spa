@@ -10,7 +10,7 @@ function Home() {
           <div className="hero-content">
             <h1 className="hero-title">Crafting Digital Excellence</h1>
             <p className="hero-subtitle">
-              We are Sharx — a London-based software company delivering
+              We are Sharx a London-based software company delivering
               cutting-edge mobile solutions to clients worldwide
             </p>
             <div className="hero-buttons">
