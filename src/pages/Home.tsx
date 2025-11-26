@@ -1,6 +1,197 @@
 import { Link } from "react-router-dom";
+import { useState, useRef, useEffect } from "react";
+import type { FormEvent } from "react";
+import emailjs from "@emailjs/browser";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 function Home() {
+  // Contact form state
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+    honeypot: "", // Honeypot field - should remain empty
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  // Rate limiting
+  const lastSubmitTime = useRef<number>(0);
+  const submissionCount = useRef<number>(0);
+  const submissionResetTimer = useRef<ReturnType<typeof setTimeout> | null>(
+    null
+  );
+
+  // reCAPTCHA
+  const { executeRecaptcha } = useGoogleReCaptcha();
+
+  // Reset submission count after 1 hour
+  useEffect(() => {
+    return () => {
+      if (submissionResetTimer.current) {
+        clearTimeout(submissionResetTimer.current);
+      }
+    };
+  }, []);
+
+  // Handle form input changes
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  // Validate form data
+  const validateForm = (): { isValid: boolean; error?: string } => {
+    // Check honeypot (should be empty)
+    if (formData.honeypot) {
+      return { isValid: false, error: "Spam detected" };
+    }
+
+    // Validate name
+    if (formData.name.trim().length < 2) {
+      return { isValid: false, error: "Please enter a valid name" };
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      return { isValid: false, error: "Please enter a valid email address" };
+    }
+
+    // Validate subject
+    if (formData.subject.trim().length < 3) {
+      return { isValid: false, error: "Please enter a subject" };
+    }
+
+    // Validate message
+    if (formData.message.trim().length < 10) {
+      return {
+        isValid: false,
+        error: "Please enter a message (at least 10 characters)",
+      };
+    }
+
+    // Check for spam patterns (excessive links, all caps, etc.)
+    const linkCount = (formData.message.match(/https?:\/\//g) || []).length;
+    if (linkCount > 2) {
+      return { isValid: false, error: "Too many links in message" };
+    }
+
+    const capsRatio =
+      (formData.message.match(/[A-Z]/g) || []).length / formData.message.length;
+    if (capsRatio > 0.7 && formData.message.length > 20) {
+      return { isValid: false, error: "Please don't use all caps" };
+    }
+
+    return { isValid: true };
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      // Rate limiting check
+      const now = Date.now();
+      const timeSinceLastSubmit = now - lastSubmitTime.current;
+
+      // Prevent submissions more frequent than once per minute
+      if (timeSinceLastSubmit < 60000) {
+        throw new Error("Please wait a moment before sending another message");
+      }
+
+      // Limit to 3 submissions per hour
+      if (submissionCount.current >= 3) {
+        throw new Error(
+          "You've reached the maximum number of submissions. Please try again later."
+        );
+      }
+
+      // Validate form
+      const validation = validateForm();
+      if (!validation.isValid) {
+        throw new Error(validation.error);
+      }
+
+      // Execute reCAPTCHA
+      if (!executeRecaptcha) {
+        throw new Error("reCAPTCHA not loaded. Please refresh and try again.");
+      }
+
+      const recaptchaToken = await executeRecaptcha("contact_form");
+
+      // EmailJS configuration
+      const serviceId = "service_zlregmo";
+      const templateId = "template_dumzvfp";
+      const publicKey = "b0GDkuncfIS_ivZ-U";
+
+      // Send email using EmailJS
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: "support@officialsharx.com",
+          recaptcha_token: recaptchaToken,
+        },
+        publicKey
+      );
+
+      // Update rate limiting
+      lastSubmitTime.current = now;
+      submissionCount.current += 1;
+
+      // Reset submission count after 1 hour
+      if (submissionResetTimer.current) {
+        clearTimeout(submissionResetTimer.current);
+      }
+      submissionResetTimer.current = setTimeout(() => {
+        submissionCount.current = 0;
+      }, 3600000); // 1 hour
+
+      // Success
+      setSubmitStatus({
+        type: "success",
+        message: "Thank you! Your message has been sent successfully.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+        honeypot: "",
+      });
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "Sorry, there was an error sending your message. Please try again or email us directly at support@officialsharx.com";
+
+      setSubmitStatus({
+        type: "error",
+        message: errorMessage,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <>
       {/* Hero Section */}
@@ -39,12 +230,11 @@ function Home() {
             <div className="about-story">
               <h3>About Us</h3>
               <p className="lead">
-                We are three friends with a common dream, to make this world
+                We are a group of people with a common dream, to make this world
                 better for everyone.
               </p>
               <p>
-                After endless courses, parties and trips we have built a true
-                and honest friendship which led to Sharx's creation. Based in
+                A strong friendship led to the creation of Sharx. Based in
                 London, we collaborate with talented professionals from around
                 the world, bringing diverse perspectives and cutting-edge
                 expertise to every project.
@@ -490,25 +680,87 @@ function Home() {
               </div>
             </div>
             <div className="contact-form">
-              <form>
+              <form onSubmit={handleSubmit}>
+                {submitStatus.type && (
+                  <div
+                    className={`alert alert-${submitStatus.type}`}
+                    style={{
+                      padding: "15px",
+                      marginBottom: "20px",
+                      borderRadius: "8px",
+                      backgroundColor:
+                        submitStatus.type === "success" ? "#d4edda" : "#f8d7da",
+                      color:
+                        submitStatus.type === "success" ? "#155724" : "#721c24",
+                      border: `1px solid ${
+                        submitStatus.type === "success" ? "#c3e6cb" : "#f5c6cb"
+                      }`,
+                    }}
+                  >
+                    {submitStatus.message}
+                  </div>
+                )}
+                {/* Honeypot field - hidden from users, catches bots */}
+                <input
+                  type="text"
+                  name="honeypot"
+                  value={formData.honeypot}
+                  onChange={handleInputChange}
+                  style={{ display: "none" }}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                />
                 <div className="form-group">
-                  <input type="text" placeholder="Your Name" required />
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    required
+                    disabled={isSubmitting}
+                  />
                 </div>
                 <div className="form-group">
-                  <input type="email" placeholder="Your Email" required />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                    disabled={isSubmitting}
+                  />
                 </div>
                 <div className="form-group">
-                  <input type="text" placeholder="Subject" required />
+                  <input
+                    type="text"
+                    name="subject"
+                    placeholder="Subject"
+                    value={formData.subject}
+                    onChange={handleInputChange}
+                    required
+                    disabled={isSubmitting}
+                  />
                 </div>
                 <div className="form-group">
                   <textarea
+                    name="message"
                     placeholder="Your Message"
                     rows={5}
+                    value={formData.message}
+                    onChange={handleInputChange}
                     required
+                    disabled={isSubmitting}
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary btn-full">
-                  Send Message
+                <button
+                  type="submit"
+                  className="btn btn-primary btn-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
