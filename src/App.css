@@ -2072,3 +2072,30 @@ section {
     display: none;
   }
 }
+
+/* Hide reCAPTCHA badge */
+.grecaptcha-badge {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* reCAPTCHA notice (required when badge is hidden) */
+.recaptcha-notice {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.recaptcha-notice a {
+  color: #fa0856;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.recaptcha-notice a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
