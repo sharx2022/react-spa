@@ -13,11 +13,14 @@ import RotaIQTermsConditions from "./pages/RotaIQTermsConditions";
 import { useEffect } from "react";
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    // Don't scroll to top if there's a hash (let the hash navigation handle it)
+    if (!hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
 
   return null;
 }

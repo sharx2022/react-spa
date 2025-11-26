@@ -28,7 +28,7 @@ function SharxProduct() {
             </svg>
             Back to Home
           </Link>
-          <div className="product-hero-content">
+          <div className="product-hero-content" id="about">
             <div className="product-hero-text">
               <h1>Sharx</h1>
               <h2>Share Your Cab</h2>
@@ -47,7 +47,7 @@ function SharxProduct() {
                   Learn More
                 </a>
               </div> */}
-              <div className="app-download-buttons">
+              <div id="download" className="app-download-buttons">
                 <a
                   href="https://apps.apple.com/gb/app/sharx-cab-taxi-sharing-london/id6450862437"
                   target="_blank"
@@ -330,8 +330,8 @@ function SharxProduct() {
               <ul className="plan-features">
                 <li>5 ride requests / day</li>
               </ul>
-              <a href="#contact" className="btn btn-secondary">
-                Get Started
+              <a href="#about" className="btn btn-secondary">
+                Download
               </a>
             </div>
             <div className="pricing-card popular">
@@ -345,8 +345,8 @@ function SharxProduct() {
               <ul className="plan-features">
                 <li>10 ride requests / purchase</li>
               </ul>
-              <a href="#contact" className="btn btn-primary">
-                Get Started
+              <a href="#about" className="btn btn-primary">
+                Download
               </a>
             </div>
             <div className="pricing-card">
@@ -359,8 +359,8 @@ function SharxProduct() {
               <ul className="plan-features">
                 <li>25 ride requests / purchase</li>
               </ul>
-              <a href="#contact" className="btn btn-secondary">
-                Get Started
+              <a href="#about" className="btn btn-secondary">
+                Download
               </a>
             </div>
           </div>
@@ -646,9 +646,13 @@ function SharxProduct() {
             <div className="legal-links">
               <Link to="/products/sharx/privacy-policy">Privacy Policy</Link>
               <span className="separator">•</span>
-              <Link to="/products/sharx/terms-conditions">Terms & Conditions</Link>
+              <Link to="/products/sharx/terms-conditions">
+                Terms & Conditions
+              </Link>
               <span className="separator">•</span>
-              <Link to="/products/sharx/community-guidelines">Community Guidelines</Link>
+              <Link to="/products/sharx/community-guidelines">
+                Community Guidelines
+              </Link>
               <span className="separator">•</span>
               <Link to="/products/sharx/safety-tips">Safety Tips</Link>
             </div>
