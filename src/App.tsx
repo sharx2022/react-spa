@@ -10,6 +10,7 @@ import CommunityGuidelines from "./pages/CommunityGuidelines";
 import SafetyTips from "./pages/SafetyTips";
 import RotaIQPrivacyPolicy from "./pages/RotaIQPrivacyPolicy";
 import RotaIQTermsConditions from "./pages/RotaIQTermsConditions";
+import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -193,6 +194,15 @@ function App() {
           element={
             <Layout>
               <RotaIQTermsConditions />
+            </Layout>
+          }
+        />
+        {/* 404 - Catch all route */}
+        <Route
+          path="*"
+          element={
+            <Layout>
+              <NotFound />
             </Layout>
           }
         />
