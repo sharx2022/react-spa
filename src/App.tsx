@@ -2,7 +2,7 @@ import "./App.css";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
 import sharxLogo from "./assets/images/sharx_logo_new_transparent background.png";
 import Home from "./pages/Home";
-import SharxProduct from "./pages/SharxProduct";
+import CutCabProduct from "./pages/CutCabProduct";
 import RotaIQProduct from "./pages/RotaIQProduct";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
@@ -69,9 +69,9 @@ function Layout({ children }: { children: React.ReactNode }) {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link to="/products/sharx">
+                    <Link to="/products/cutcab">
                       <div className="dropdown-item">
-                        <strong>Sharx</strong>
+                        <strong>CutCab</strong>
                         <span>{t('nav.sharxSubtitle')}</span>
                       </div>
                     </Link>
@@ -143,10 +143,10 @@ function App() {
           }
         />
         <Route
-          path="/products/sharx"
+          path="/products/cutcab"
           element={
             <Layout>
-              <SharxProduct />
+              <CutCabProduct />
             </Layout>
           }
         />
@@ -159,7 +159,7 @@ function App() {
           }
         />
         <Route
-          path="/products/sharx/privacy-policy"
+          path="/products/cutcab/privacy-policy"
           element={
             <Layout>
               <PrivacyPolicy />
@@ -167,7 +167,7 @@ function App() {
           }
         />
         <Route
-          path="/products/sharx/terms-conditions"
+          path="/products/cutcab/terms-conditions"
           element={
             <Layout>
               <TermsConditions />
@@ -175,7 +175,7 @@ function App() {
           }
         />
         <Route
-          path="/products/sharx/community-guidelines"
+          path="/products/cutcab/community-guidelines"
           element={
             <Layout>
               <CommunityGuidelines />
@@ -183,7 +183,7 @@ function App() {
           }
         />
         <Route
-          path="/products/sharx/safety-tips"
+          path="/products/cutcab/safety-tips"
           element={
             <Layout>
               <SafetyTips />

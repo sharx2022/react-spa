@@ -3,7 +3,7 @@ import "../App.css";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-function SharxProduct() {
+function CutCabProduct() {
   const { t } = useTranslation();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -32,7 +32,7 @@ function SharxProduct() {
           </Link>
           <div className="product-hero-content" id="about">
             <div className="product-hero-text">
-              <h1>Sharx</h1>
+              <h1>CutCab</h1>
               <h2>{t('sharxProduct.heroSubtitle')}</h2>
               <p className="product-hero-description">
                 {t('sharxProduct.heroDescription')}
@@ -607,17 +607,17 @@ function SharxProduct() {
               {t('sharxProduct.contactNote')} <Link to="/#contact">{t('sharxProduct.contactUs')}</Link>
             </p>
             <div className="legal-links">
-              <Link to="/products/sharx/privacy-policy">{t('sharxProduct.privacyPolicy')}</Link>
+              <Link to="/products/cutcab/privacy-policy">{t('sharxProduct.privacyPolicy')}</Link>
               <span className="separator">•</span>
-              <Link to="/products/sharx/terms-conditions">
+              <Link to="/products/cutcab/terms-conditions">
                 {t('sharxProduct.termsConditions')}
               </Link>
               <span className="separator">•</span>
-              <Link to="/products/sharx/community-guidelines">
+              <Link to="/products/cutcab/community-guidelines">
                 {t('sharxProduct.communityGuidelines')}
               </Link>
               <span className="separator">•</span>
-              <Link to="/products/sharx/safety-tips">{t('sharxProduct.safetyTips')}</Link>
+              <Link to="/products/cutcab/safety-tips">{t('sharxProduct.safetyTips')}</Link>
             </div>
           </div>
         </div>
@@ -626,4 +626,4 @@ function SharxProduct() {
   );
 }
 
-export default SharxProduct;
+export default CutCabProduct;

@@ -75,7 +75,7 @@ function NotFound() {
           <p className="helpful-title">{t('notFound.helpfulTitle')}</p>
           <div className="link-grid">
             <Link to="/">{t('nav.home')}</Link>
-            <Link to="/products/sharx">{t('notFound.sharxApp')}</Link>
+            <Link to="/products/cutcab">{t('notFound.sharxApp')}</Link>
             <Link to="/products/rotaiq">RotaIQ</Link>
             <Link to="/#contact">{t('notFound.contactUs')}</Link>
           </div>

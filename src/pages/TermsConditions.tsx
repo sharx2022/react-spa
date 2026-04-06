@@ -5,7 +5,7 @@ function TermsConditions() {
   return (
     <div className="legal-page">
       <div className="container">
-        <Link to="/products/sharx" className="back-link">
+        <Link to="/products/cutcab" className="back-link">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -17,7 +17,7 @@ function TermsConditions() {
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-          Back to Sharx
+          Back to CutCab
         </Link>
 
         <div className="legal-content">
@@ -26,7 +26,7 @@ function TermsConditions() {
           <section>
             <h2>Agreement to Terms of Use</h2>
             <p>
-              When you create a sharx account, you are acknowledging your acceptance of (i) these Terms of Use, (ii) 
+              When you create a cutcab account, you are acknowledging your acceptance of (i) these Terms of Use, (ii) 
               our Privacy Policy, (iii) Safety Tips, and (iv) Community Guidelines, each of which is incorporated into 
               this Agreement by reference. If you do not agree to all the terms of this Agreement, please refrain from 
               using the app.
@@ -50,7 +50,7 @@ function TermsConditions() {
           <section>
             <h2>Your Account</h2>
             <p>
-              To use sharx, you may sign in using your phone number. You are responsible for maintaining the 
+              To use cutcab, you may sign in using your phone number. You are responsible for maintaining the 
               confidentiality of your login credentials. If you suspect unauthorised access, contact us immediately 
               through the Support option.
             </p>
@@ -59,11 +59,11 @@ function TermsConditions() {
           <section>
             <h2>App Modification and Termination</h2>
             <p>
-              Sharx continuously strives to enhance its app. We may suspend the service for safety or security concerns, 
+              CutCab continuously strives to enhance its app. We may suspend the service for safety or security concerns, 
               notifying you in advance when possible.
             </p>
             <p>
-              To terminate your account, follow the instructions under Settings. Sharx reserves the right to terminate 
+              To terminate your account, follow the instructions under Settings. CutCab reserves the right to terminate 
               your account at any time without notice if it believes you have violated this Agreement.
             </p>
           </section>
@@ -71,20 +71,20 @@ function TermsConditions() {
           <section>
             <h2>Safety and Interactions with Other Users</h2>
             <p>
-              While sharx promotes respectful interactions, we are not responsible for the behavior of users on or off 
+              While cutcab promotes respectful interactions, we are not responsible for the behavior of users on or off 
               the app. You must exercise caution in all interactions. <strong>Never share financial information or send 
               money to other users.</strong>
             </p>
             <p>
-              Sharx does not conduct criminal background checks on users. You bear sole responsibility for your 
+              CutCab does not conduct criminal background checks on users. You bear sole responsibility for your 
               interactions with other users.
             </p>
           </section>
 
           <section>
-            <h2>Rights Granted by Sharx</h2>
+            <h2>Rights Granted by CutCab</h2>
             <p>
-              Sharx grants you a personal, worldwide, royalty-free, non-assignable, nonexclusive, revocable, and 
+              CutCab grants you a personal, worldwide, royalty-free, non-assignable, nonexclusive, revocable, and 
               non-sublicensable license to access and use the app. This license is automatically revoked if you:
             </p>
             <ul>
@@ -98,9 +98,9 @@ function TermsConditions() {
           </section>
 
           <section>
-            <h2>Your Granted Rights to Sharx</h2>
+            <h2>Your Granted Rights to CutCab</h2>
             <p>
-              By creating an account, you grant sharx a global, transferable, royalty-free license to use any content 
+              By creating an account, you grant cutcab a global, transferable, royalty-free license to use any content 
               you post on the app. This license is for operating, developing, and improving the app.
             </p>
             <p>
@@ -127,7 +127,7 @@ function TermsConditions() {
             <h2>Purchases</h2>
             <h3>In General</h3>
             <p>
-              Sharx may offer products and services for purchase through authorized payment platforms. Your Payment 
+              CutCab may offer products and services for purchase through authorized payment platforms. Your Payment 
               Method will be charged for selected services, including applicable taxes.
             </p>
 
@@ -140,7 +140,7 @@ function TermsConditions() {
             <h3>Ride Requests</h3>
             <p>
               You may purchase ride requests which are virtual products. All purchases are final and non-refundable. 
-              Sharx is not obligated to refund Virtual Items for any reason.
+              CutCab is not obligated to refund Virtual Items for any reason.
             </p>
 
             <h3>Refunds</h3>
@@ -154,7 +154,7 @@ function TermsConditions() {
           <section>
             <h2>Disclaimers</h2>
             <p>
-              Sharx offers the service on an "as is" and "as available" basis. We do not guarantee that the app will be 
+              CutCab offers the service on an "as is" and "as available" basis. We do not guarantee that the app will be 
               uninterrupted, secure, or error-free. Any materials downloaded are at your own discretion and risk.
             </p>
           </section>
@@ -162,7 +162,7 @@ function TermsConditions() {
           <section>
             <h2>Third-Party Services</h2>
             <p>
-              The app may display advertisements and contain links to external websites. Sharx is not liable for the 
+              The app may display advertisements and contain links to external websites. CutCab is not liable for the 
               actions or terms of such third parties.
             </p>
             <p>By using our application, users are bound by Google's Terms of Service.</p>
@@ -171,7 +171,7 @@ function TermsConditions() {
           <section>
             <h2>Limitation of Liability</h2>
             <p>
-              To the fullest extent allowed by law, sharx shall not be liable for indirect, consequential, or special 
+              To the fullest extent allowed by law, cutcab shall not be liable for indirect, consequential, or special 
               damages arising from your use of the app.
             </p>
           </section>
@@ -180,7 +180,7 @@ function TermsConditions() {
             <h2>Contact Us</h2>
             <p>
               If you have questions about these Terms & Conditions, please contact us through the Support option in the 
-              sharx app.
+              cutcab app.
             </p>
           </section>
         </div>

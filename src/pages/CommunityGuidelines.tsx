@@ -5,7 +5,7 @@ function CommunityGuidelines() {
   return (
     <div className="legal-page">
       <div className="container">
-        <Link to="/products/sharx" className="back-link">
+        <Link to="/products/cutcab" className="back-link">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -17,16 +17,16 @@ function CommunityGuidelines() {
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-          Back to Sharx
+          Back to CutCab
         </Link>
 
         <div className="legal-content">
           <h1>Community Guidelines</h1>
 
           <section>
-            <h2>Welcome to sharx!</h2>
+            <h2>Welcome to cutcab!</h2>
             <p>
-              Our aim at sharx is to create an enjoyable, secure, and inclusive environment where everyone can connect 
+              Our aim at cutcab is to create an enjoyable, secure, and inclusive environment where everyone can connect 
               with co-riders. These Community Guidelines serve as a framework to establish expectations for behaviour, 
               whether you're on the app or interacting elsewhere. Failure to adhere to these guidelines may lead to 
               consequences, ranging from suspension to a permanent ban.
@@ -34,7 +34,7 @@ function CommunityGuidelines() {
           </section>
 
           <section>
-            <h2>Sharx's Guidelines</h2>
+            <h2>CutCab's Guidelines</h2>
 
             <div className="guideline-item">
               <h3>Respect Boundaries</h3>
@@ -74,7 +74,7 @@ function CommunityGuidelines() {
             <div className="guideline-item">
               <h3>Say No to Hate</h3>
               <p>
-                Sharx is a place free of hate, racism, bigotry, or violence based on an individual's identity, 
+                CutCab is a place free of hate, racism, bigotry, or violence based on an individual's identity, 
                 appearance, or beliefs. This includes race, ethnicity, religion, disability, physical appearance, gender, 
                 gender identity, age, national origin, or sexual orientation.
               </p>
@@ -91,7 +91,7 @@ function CommunityGuidelines() {
             <div className="guideline-item">
               <h3>Adhere to the Law</h3>
               <p>
-                All illegal content or activities are strictly prohibited on sharx. This includes using the platform for 
+                All illegal content or activities are strictly prohibited on cutcab. This includes using the platform for 
                 buying or selling drugs, counterfeit goods, or seeking assistance in illegal activities.
               </p>
             </div>
@@ -99,15 +99,15 @@ function CommunityGuidelines() {
             <div className="guideline-item">
               <h3>One Account Per Person</h3>
               <p>
-                Each sharx account must have a single owner. For logistical and privacy reasons, multiple individuals 
+                Each cutcab account must have a single owner. For logistical and privacy reasons, multiple individuals 
                 cannot access the same account.
               </p>
             </div>
 
             <div className="guideline-item">
-              <h3>Be an Honest Member of the Sharx Community</h3>
+              <h3>Be an Honest Member of the CutCab Community</h3>
               <p>
-                Do not misuse sharx in any way. Do not spread false or misleading information, spam harmful links or 
+                Do not misuse cutcab in any way. Do not spread false or misleading information, spam harmful links or 
                 unsolicited content, create multiple accounts, manipulate or deceive others for financial gain, submit 
                 misleading reports, or use third-party apps to exploit features or manipulate the system.
               </p>
@@ -117,7 +117,7 @@ function CommunityGuidelines() {
           <section>
             <h2>Reporting</h2>
             <p>
-              As a member of the sharx community, we encourage you to report any instances of harm, discomfort, or 
+              As a member of the cutcab community, we encourage you to report any instances of harm, discomfort, or 
               violations of our Community Guidelines. Your reports are kept confidential and assist us in addressing 
               harmful behaviour and safeguarding others.
             </p>
@@ -132,9 +132,9 @@ function CommunityGuidelines() {
             </p>
             <p>
               We reserve the right to investigate and potentially terminate accounts, without refunding any purchases, 
-              if we find misuse of the service or behavior that sharx deems inappropriate, unlawful, or in violation of 
+              if we find misuse of the service or behavior that cutcab deems inappropriate, unlawful, or in violation of 
               our Community Guidelines or Terms of Use. This applies to actions or communications that occur off the 
-              service but involve individuals met through sharx.
+              service but involve individuals met through cutcab.
             </p>
           </section>
         </div>

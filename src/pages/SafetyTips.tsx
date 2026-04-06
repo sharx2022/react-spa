@@ -5,7 +5,7 @@ function SafetyTips() {
   return (
     <div className="legal-page">
       <div className="container">
-        <Link to="/products/sharx" className="back-link">
+        <Link to="/products/cutcab" className="back-link">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -17,7 +17,7 @@ function SafetyTips() {
             <line x1="19" y1="12" x2="5" y2="12"></line>
             <polyline points="12 19 5 12 12 5"></polyline>
           </svg>
-          Back to Sharx
+          Back to CutCab
         </Link>
 
         <div className="legal-content">
@@ -56,7 +56,7 @@ function SafetyTips() {
               </p>
               <p className="warning">
                 <strong>Never divulge information that could potentially grant access to your financial accounts.</strong> 
-                If another user requests money from you, promptly report the incident through sharx app.
+                If another user requests money from you, promptly report the incident through cutcab app.
               </p>
             </div>
 
@@ -95,7 +95,7 @@ function SafetyTips() {
               </div>
               <h3>Remain on the App</h3>
               <p>
-                Maintain your conversations within the sharx app while you acquaint yourself with someone. Since 
+                Maintain your conversations within the cutcab app while you acquaint yourself with someone. Since 
                 messages on the platform are subject to our Message Filters, individuals with malicious intentions 
                 often attempt to shift the conversation to text messages, messaging apps, email, or phone calls 
                 immediately.
@@ -149,7 +149,7 @@ function SafetyTips() {
               </div>
               <h3>Protect Your Account</h3>
               <p>
-                Exercise caution when logging into your account from another device. <strong>Sharx will never send you 
+                Exercise caution when logging into your account from another device. <strong>CutCab will never send you 
                 an email requesting your login information.</strong> If you receive such an email, report it immediately.
               </p>
             </div>
@@ -226,7 +226,7 @@ function SafetyTips() {
             <h2>Remember</h2>
             <p>
               Your safety is our top priority. If you ever feel uncomfortable or unsafe, trust your instincts and take 
-              action. Report any suspicious behavior immediately through the sharx app, and don't hesitate to contact 
+              action. Report any suspicious behavior immediately through the cutcab app, and don't hesitate to contact 
               local authorities if you feel you are in danger.
             </p>
           </section>

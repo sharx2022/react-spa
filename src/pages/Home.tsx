@@ -401,7 +401,7 @@ function Home() {
                   <path d="M17 8l4 4-4 4M3 12h18M11 6v12"></path>
                 </svg>
               </div>
-              <h3>Sharx</h3>
+              <h3>CutCab</h3>
               <h4>{t('products.sharxSubtitle')}</h4>
               <p>
                 {t('products.sharxDesc')}
@@ -411,7 +411,7 @@ function Home() {
                 <span className="feature-tag">{t('products.realTimeTracking')}</span>
                 <span className="feature-tag">{t('products.securePayments')}</span>
               </div>
-              <Link to="/products/sharx" className="product-link">
+              <Link to="/products/cutcab" className="product-link">
                 {t('products.learnMore')}
                 <svg
                   viewBox="0 0 24 24"
