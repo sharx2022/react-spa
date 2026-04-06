@@ -358,6 +358,82 @@ function CutCabProduct() {
         </div>
       </section> */}
 
+      {/* Partner Section */}
+      <section className="partner-section">
+        <div className="container">
+          <div className="section-header">
+            <h2>{t("sharxProduct.partnerTitle")}</h2>
+            <div className="underline"></div>
+            <p className="section-subtitle">{t("sharxProduct.partnerSubtitle")}</p>
+          </div>
+          <div className="partner-content">
+            <div className="partner-intro">
+              <p>{t("sharxProduct.partnerIntro")}</p>
+            </div>
+            <div className="partner-cards">
+              <div className="partner-card">
+                <div className="partner-card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <h3>{t("sharxProduct.partnerBenefit1Title")}</h3>
+                <p>{t("sharxProduct.partnerBenefit1Desc")}</p>
+              </div>
+              <div className="partner-card">
+                <div className="partner-card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <h3>{t("sharxProduct.partnerBenefit2Title")}</h3>
+                <p>{t("sharxProduct.partnerBenefit2Desc")}</p>
+              </div>
+              <div className="partner-card">
+                <div className="partner-card-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <h3>{t("sharxProduct.partnerBenefit3Title")}</h3>
+                <p>{t("sharxProduct.partnerBenefit3Desc")}</p>
+              </div>
+            </div>
+            <div className="partner-cta">
+              <p>{t("sharxProduct.partnerCtaText")}</p>
+              <Link to="/#contact" className="btn btn-primary">
+                {t("sharxProduct.partnerCtaButton")}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs Section */}
       <section className="faqs-section">
         <div className="container">

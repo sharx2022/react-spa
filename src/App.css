@@ -1678,6 +1678,95 @@ section {
   max-width: 200px;
 }
 
+/* Partner Section */
+.partner-section {
+  padding: 6rem 0;
+  background: var(--darker-bg, #0a0a0a);
+}
+
+.partner-intro {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 4rem;
+}
+
+.partner-intro p {
+  font-size: 1.15rem;
+  color: var(--text-secondary, #ccc);
+  line-height: 1.8;
+}
+
+.partner-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.partner-card {
+  padding: 2.5rem 2rem;
+  background: rgba(250, 8, 86, 0.03);
+  border-radius: 20px;
+  border: 1px solid rgba(250, 8, 86, 0.15);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary-color);
+  background: rgba(250, 8, 86, 0.08);
+  box-shadow: 0 15px 40px rgba(250, 8, 86, 0.25);
+}
+
+.partner-card-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--yellow));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-card-icon svg {
+  width: 30px;
+  height: 30px;
+  stroke: #fff;
+}
+
+.partner-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary, #fff);
+}
+
+.partner-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary, #ccc);
+  line-height: 1.7;
+}
+
+.partner-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: rgba(250, 8, 86, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(250, 8, 86, 0.2);
+}
+
+.partner-cta p {
+  font-size: 1.1rem;
+  color: var(--text-secondary, #ccc);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
+}
+
 /* FAQs Section */
 .faqs-section {
   padding: 6rem 0;
