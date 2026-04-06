@@ -28,19 +28,23 @@ function CutCabProduct() {
               <line x1="19" y1="12" x2="5" y2="12"></line>
               <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
-            {t('sharxProduct.backToHome')}
+            {t("sharxProduct.backToHome")}
           </Link>
           <div className="product-hero-content" id="about">
             <div className="product-hero-text">
               <h1>CutCab</h1>
-              <h2>{t('sharxProduct.heroSubtitle')}</h2>
+              <h2>{t("sharxProduct.heroSubtitle")}</h2>
               <p className="product-hero-description">
-                {t('sharxProduct.heroDescription')}
+                {t("sharxProduct.heroDescription")}
               </p>
               <div className="product-hero-tags">
-                <span className="tag">{t('sharxProduct.tagSmartMatching')}</span>
-                <span className="tag">{t('sharxProduct.tagSecurePayments')}</span>
-                <span className="tag">{t('sharxProduct.tagEcoFriendly')}</span>
+                <span className="tag">
+                  {t("sharxProduct.tagSmartMatching")}
+                </span>
+                <span className="tag">
+                  {t("sharxProduct.tagSecurePayments")}
+                </span>
+                <span className="tag">{t("sharxProduct.tagEcoFriendly")}</span>
               </div>
               {/* <div className="product-hero-buttons">
                 <a href="#problem" className="btn btn-primary">
@@ -199,28 +203,24 @@ function CutCabProduct() {
       <section id="problem" className="problem-section">
         <div className="container">
           <div className="section-header">
-            <h2>{t('sharxProduct.problemTitle')}</h2>
+            <h2>{t("sharxProduct.problemTitle")}</h2>
             <div className="underline"></div>
             <p className="section-subtitle alert">
-              {t('sharxProduct.problemAlert')}
+              {t("sharxProduct.problemAlert")}
             </p>
           </div>
           <div className="problem-content">
-            <h3>{t('sharxProduct.problemHeading')}</h3>
-            <p className="problem-text">
-              {t('sharxProduct.problemText1')}
-            </p>
-            <p className="problem-text">
-              {t('sharxProduct.problemText2')}
-            </p>
+            <h3>{t("sharxProduct.problemHeading")}</h3>
+            <p className="problem-text">{t("sharxProduct.problemText1")}</p>
+            <p className="problem-text">{t("sharxProduct.problemText2")}</p>
             <div className="problem-stats">
               <div className="problem-stat">
                 <div className="stat-number">300k+</div>
-                <p>{t('sharxProduct.dailyRides')}</p>
+                <p>{t("sharxProduct.dailyRides")}</p>
               </div>
               <div className="problem-stat">
                 <div className="stat-number">79%</div>
-                <p>{t('sharxProduct.dieselEngines')}</p>
+                <p>{t("sharxProduct.dieselEngines")}</p>
               </div>
             </div>
           </div>
@@ -231,12 +231,14 @@ function CutCabProduct() {
       <section className="how-it-works">
         <div className="container">
           <div className="section-header">
-            <h2>{t('sharxProduct.howItWorksTitle')}</h2>
+            <h2>{t("sharxProduct.howItWorksTitle")}</h2>
             <div className="underline"></div>
-            <p className="section-subtitle">{t('sharxProduct.howItWorksSubtitle')}</p>
+            <p className="section-subtitle">
+              {t("sharxProduct.howItWorksSubtitle")}
+            </p>
           </div>
           <p className="how-it-works-intro">
-            {t('sharxProduct.howItWorksIntro')}
+            {t("sharxProduct.howItWorksIntro")}
           </p>
           <div className="steps-grid">
             <div className="step-card">
@@ -254,8 +256,8 @@ function CutCabProduct() {
                   <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path>
                 </svg>
               </div>
-              <h3>{t('sharxProduct.step1Title')}</h3>
-              <p>{t('sharxProduct.step1Desc')}</p>
+              <h3>{t("sharxProduct.step1Title")}</h3>
+              <p>{t("sharxProduct.step1Desc")}</p>
             </div>
             <div className="step-card">
               <div className="step-number">02</div>
@@ -274,8 +276,8 @@ function CutCabProduct() {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
-              <h3>{t('sharxProduct.step2Title')}</h3>
-              <p>{t('sharxProduct.step2Desc')}</p>
+              <h3>{t("sharxProduct.step2Title")}</h3>
+              <p>{t("sharxProduct.step2Desc")}</p>
             </div>
             <div className="step-card">
               <div className="step-number">03</div>
@@ -291,15 +293,15 @@ function CutCabProduct() {
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                 </svg>
               </div>
-              <h3>{t('sharxProduct.step3Title')}</h3>
-              <p>{t('sharxProduct.step3Desc')}</p>
+              <h3>{t("sharxProduct.step3Title")}</h3>
+              <p>{t("sharxProduct.step3Desc")}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <section className="pricing-section">
+      {/* <section className="pricing-section">
         <div className="container">
           <div className="section-header">
             <h2>{t('sharxProduct.pricingTitle')}</h2>
@@ -354,22 +356,20 @@ function CutCabProduct() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQs Section */}
       <section className="faqs-section">
         <div className="container">
           <div className="section-header">
-            <h2>{t('sharxProduct.faqsTitle')}</h2>
+            <h2>{t("sharxProduct.faqsTitle")}</h2>
             <div className="underline"></div>
-            <p className="section-subtitle">
-              {t('sharxProduct.faqsSubtitle')}
-            </p>
+            <p className="section-subtitle">{t("sharxProduct.faqsSubtitle")}</p>
           </div>
           <div className="faqs-list">
             <div className={`faq-item ${openFaq === 0 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(0)}>
-                <span>{t('sharxProduct.faq0Question')}</span>
+                <span>{t("sharxProduct.faq0Question")}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -383,12 +383,12 @@ function CutCabProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>{t('sharxProduct.faq0Answer')}</p>
+                <p>{t("sharxProduct.faq0Answer")}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 1 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(1)}>
-                <span>{t('sharxProduct.faq1Question')}</span>
+                <span>{t("sharxProduct.faq1Question")}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -402,12 +402,12 @@ function CutCabProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>{t('sharxProduct.faq1Answer')}</p>
+                <p>{t("sharxProduct.faq1Answer")}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 2 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(2)}>
-                <span>{t('sharxProduct.faq2Question')}</span>
+                <span>{t("sharxProduct.faq2Question")}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -421,12 +421,12 @@ function CutCabProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>{t('sharxProduct.faq2Answer')}</p>
+                <p>{t("sharxProduct.faq2Answer")}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 3 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(3)}>
-                <span>{t('sharxProduct.faq3Question')}</span>
+                <span>{t("sharxProduct.faq3Question")}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -440,12 +440,12 @@ function CutCabProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>{t('sharxProduct.faq3Answer')}</p>
+                <p>{t("sharxProduct.faq3Answer")}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 4 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(4)}>
-                <span>{t('sharxProduct.faq4Question')}</span>
+                <span>{t("sharxProduct.faq4Question")}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -459,7 +459,7 @@ function CutCabProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>{t('sharxProduct.faq4Answer')}</p>
+                <p>{t("sharxProduct.faq4Answer")}</p>
               </div>
             </div>
           </div>
@@ -470,8 +470,8 @@ function CutCabProduct() {
       <section className="product-cta">
         <div className="container">
           <div className="cta-content">
-            <h2>{t('sharxProduct.ctaTitle')}</h2>
-            <p>{t('sharxProduct.ctaDesc')}</p>
+            <h2>{t("sharxProduct.ctaTitle")}</h2>
+            <p>{t("sharxProduct.ctaDesc")}</p>
             <div className="app-download-buttons cta-download">
               <a
                 href="https://apps.apple.com/gb/app/sharx-cab-taxi-sharing-london/id6450862437"
@@ -604,20 +604,25 @@ function CutCabProduct() {
               </a>
             </div>
             <p className="contact-note">
-              {t('sharxProduct.contactNote')} <Link to="/#contact">{t('sharxProduct.contactUs')}</Link>
+              {t("sharxProduct.contactNote")}{" "}
+              <Link to="/#contact">{t("sharxProduct.contactUs")}</Link>
             </p>
             <div className="legal-links">
-              <Link to="/products/cutcab/privacy-policy">{t('sharxProduct.privacyPolicy')}</Link>
+              <Link to="/products/cutcab/privacy-policy">
+                {t("sharxProduct.privacyPolicy")}
+              </Link>
               <span className="separator">•</span>
               <Link to="/products/cutcab/terms-conditions">
-                {t('sharxProduct.termsConditions')}
+                {t("sharxProduct.termsConditions")}
               </Link>
               <span className="separator">•</span>
               <Link to="/products/cutcab/community-guidelines">
-                {t('sharxProduct.communityGuidelines')}
+                {t("sharxProduct.communityGuidelines")}
               </Link>
               <span className="separator">•</span>
-              <Link to="/products/cutcab/safety-tips">{t('sharxProduct.safetyTips')}</Link>
+              <Link to="/products/cutcab/safety-tips">
+                {t("sharxProduct.safetyTips")}
+              </Link>
             </div>
           </div>
         </div>
