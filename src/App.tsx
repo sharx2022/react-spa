@@ -12,6 +12,8 @@ import RotaIQPrivacyPolicy from "./pages/RotaIQPrivacyPolicy";
 import RotaIQTermsConditions from "./pages/RotaIQTermsConditions";
 import NotFound from "./pages/NotFound";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./components/LanguageSwitcher";
 
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
@@ -27,6 +29,12 @@ function ScrollToTop() {
 }
 
 function Layout({ children }: { children: React.ReactNode }) {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language.startsWith('el') ? 'el' : 'en';
+  }, [i18n.language]);
+
   return (
     <div className="app">
       {/* Navigation */}
@@ -39,14 +47,14 @@ function Layout({ children }: { children: React.ReactNode }) {
             </Link>
             <ul className="nav-links">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">{t('nav.home')}</Link>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about">{t('nav.about')}</a>
               </li>
               <li className="dropdown">
                 <a href="#products" className="dropdown-toggle">
-                  Products
+                  {t('nav.products')}
                   <svg
                     className="dropdown-arrow"
                     viewBox="0 0 24 24"
@@ -64,7 +72,7 @@ function Layout({ children }: { children: React.ReactNode }) {
                     <Link to="/products/sharx">
                       <div className="dropdown-item">
                         <strong>Sharx</strong>
-                        <span>Share Your Cab</span>
+                        <span>{t('nav.sharxSubtitle')}</span>
                       </div>
                     </Link>
                   </li>
@@ -72,19 +80,20 @@ function Layout({ children }: { children: React.ReactNode }) {
                     <Link to="/products/rotaiq">
                       <div className="dropdown-item">
                         <strong>RotaIQ</strong>
-                        <span>Schedule Generator</span>
+                        <span>{t('nav.rotaiqSubtitle')}</span>
                       </div>
                     </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="#services">Services</a>
+                <a href="#services">{t('nav.services')}</a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#contact">{t('nav.contact')}</a>
               </li>
             </ul>
+            <LanguageSwitcher />
           </div>
         </div>
       </nav>
@@ -101,18 +110,18 @@ function Layout({ children }: { children: React.ReactNode }) {
                 <img src={sharxLogo} alt="Sharx Logo" className="logo-image" />
                 <span className="logo-text">SHARX</span>
               </Link>
-              <p>Crafting Digital Excellence</p>
+              <p>{t('footer.tagline')}</p>
             </div>
             <div className="footer-links">
-              <Link to="/">Home</Link>
-              <a href="#about">About</a>
-              <a href="#products">Products</a>
-              <a href="#services">Services</a>
-              <a href="#contact">Contact</a>
+              <Link to="/">{t('nav.home')}</Link>
+              <a href="#about">{t('nav.about')}</a>
+              <a href="#products">{t('nav.products')}</a>
+              <a href="#services">{t('nav.services')}</a>
+              <a href="#contact">{t('nav.contact')}</a>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 Sharx. All rights reserved.</p>
+            <p>{t('footer.copyright')}</p>
           </div>
         </div>
       </footer>

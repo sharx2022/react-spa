@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import "../App.css";
+import { useTranslation } from "react-i18next";
 
 function RotaIQProduct() {
+  const { t } = useTranslation();
   return (
     <div className="product-page">
       {/* Hero Section */}
@@ -19,22 +21,20 @@ function RotaIQProduct() {
               <line x1="19" y1="12" x2="5" y2="12"></line>
               <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
-            Back to Home
+            {t('rotaiqProduct.backToHome')}
           </Link>
           <div className="product-hero-content">
             <div className="product-hero-text">
               <h1>RotaIQ</h1>
-              <h2>Schedule Generator</h2>
+              <h2>{t('rotaiqProduct.heroSubtitle')}</h2>
               <p className="product-hero-description">
-                Intelligent workforce scheduling powered by AI. Automate shift
-                planning, optimize staffing, and ensure compliance with labor
-                regulations.
+                {t('rotaiqProduct.heroDescription')}
               </p>
               <div className="product-hero-tags">
-                <span className="tag">AI-Powered</span>
-                <span className="tag">Auto-Scheduling</span>
-                <span className="tag">Shift Management</span>
-                <span className="tag">Cloud-Based</span>
+                <span className="tag">{t('rotaiqProduct.tagAIPowered')}</span>
+                <span className="tag">{t('rotaiqProduct.tagAutoScheduling')}</span>
+                <span className="tag">{t('rotaiqProduct.tagShiftManagement')}</span>
+                <span className="tag">{t('rotaiqProduct.tagCloudBased')}</span>
               </div>
               {/* <div className="product-hero-buttons">
                 <a href="#features" className="btn btn-primary">
@@ -196,10 +196,10 @@ function RotaIQProduct() {
       <section id="features" className="product-features-section">
         <div className="container">
           <div className="section-header">
-            <h2>Key Features</h2>
+            <h2>{t('rotaiqProduct.featuresTitle')}</h2>
             <div className="underline"></div>
             <p className="section-subtitle">
-              Everything you need for efficient workforce management
+              {t('rotaiqProduct.featuresSubtitle')}
             </p>
           </div>
           <div className="features-grid">
@@ -217,11 +217,8 @@ function RotaIQProduct() {
                   <path d="M12 1v6m0 6v6m4.22-13.22l-1.42 1.42m-5.6 5.6l-1.42 1.42m10.24 0l-1.42-1.42m-5.6-5.6l-1.42-1.42M23 12h-6m-6 0H5"></path>
                 </svg>
               </div>
-              <h3>AI-Powered Scheduling</h3>
-              <p>
-                Advanced algorithms create optimal schedules considering
-                availability, skills, preferences, and business requirements.
-              </p>
+              <h3>{t('rotaiqProduct.feature1Title')}</h3>
+              <p>{t('rotaiqProduct.feature1Desc')}</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
@@ -237,11 +234,8 @@ function RotaIQProduct() {
                   <polyline points="17 6 23 6 23 12"></polyline>
                 </svg>
               </div>
-              <h3>Labor Cost Optimization</h3>
-              <p>
-                Reduce labor costs by up to 30% with intelligent staffing that
-                matches demand perfectly without overstaffing.
-              </p>
+              <h3>{t('rotaiqProduct.feature2Title')}</h3>
+              <p>{t('rotaiqProduct.feature2Desc')}</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
@@ -260,11 +254,8 @@ function RotaIQProduct() {
                   <polyline points="10 9 9 9 8 9"></polyline>
                 </svg>
               </div>
-              <h3>Compliance Management</h3>
-              <p>
-                Automatically ensure compliance with labor laws, union rules,
-                and company policies. Avoid costly violations.
-              </p>
+              <h3>{t('rotaiqProduct.feature3Title')}</h3>
+              <p>{t('rotaiqProduct.feature3Desc')}</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
@@ -280,11 +271,8 @@ function RotaIQProduct() {
                   <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                 </svg>
               </div>
-              <h3>Mobile Access</h3>
-              <p>
-                Employees can view schedules, request time off, and swap shifts
-                from any device, anywhere, anytime.
-              </p>
+              <h3>{t('rotaiqProduct.feature4Title')}</h3>
+              <p>{t('rotaiqProduct.feature4Desc')}</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
@@ -301,11 +289,8 @@ function RotaIQProduct() {
                   <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
               </div>
-              <h3>Easy Integration</h3>
-              <p>
-                Seamlessly integrates with existing payroll, HR, and time
-                tracking systems. Quick setup with no disruption.
-              </p>
+              <h3>{t('rotaiqProduct.feature5Title')}</h3>
+              <p>{t('rotaiqProduct.feature5Desc')}</p>
             </div>
             <div className="feature-item">
               <div className="feature-icon">
@@ -321,11 +306,8 @@ function RotaIQProduct() {
                   <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                 </svg>
               </div>
-              <h3>Real-time Updates</h3>
-              <p>
-                Instant notifications for schedule changes. Automatic conflict
-                detection and resolution suggestions.
-              </p>
+              <h3>{t('rotaiqProduct.feature6Title')}</h3>
+              <p>{t('rotaiqProduct.feature6Desc')}</p>
             </div>
           </div>
         </div>
@@ -335,41 +317,29 @@ function RotaIQProduct() {
       <section className="product-benefits">
         <div className="container">
           <div className="section-header">
-            <h2>Why Choose RotaIQ?</h2>
+            <h2>{t('rotaiqProduct.benefitsTitle')}</h2>
             <div className="underline"></div>
           </div>
           <div className="benefits-content">
             <div className="benefit-card">
               <div className="benefit-number">01</div>
-              <h3>Save Time</h3>
-              <p>
-                Create schedules in minutes instead of hours. Reduce
-                administrative time by 90% with automated scheduling.
-              </p>
+              <h3>{t('rotaiqProduct.benefit1Title')}</h3>
+              <p>{t('rotaiqProduct.benefit1Desc')}</p>
             </div>
             <div className="benefit-card">
               <div className="benefit-number">02</div>
-              <h3>Reduce Costs</h3>
-              <p>
-                Optimize labor costs with AI-driven staffing. Eliminate
-                overstaffing and reduce overtime expenses significantly.
-              </p>
+              <h3>{t('rotaiqProduct.benefit2Title')}</h3>
+              <p>{t('rotaiqProduct.benefit2Desc')}</p>
             </div>
             <div className="benefit-card">
               <div className="benefit-number">03</div>
-              <h3>Improve Satisfaction</h3>
-              <p>
-                Employees get fair schedules that consider their preferences.
-                Higher satisfaction leads to better retention.
-              </p>
+              <h3>{t('rotaiqProduct.benefit3Title')}</h3>
+              <p>{t('rotaiqProduct.benefit3Desc')}</p>
             </div>
             <div className="benefit-card">
               <div className="benefit-number">04</div>
-              <h3>Ensure Compliance</h3>
-              <p>
-                Stay compliant with all labor regulations automatically. Avoid
-                fines and legal issues with built-in compliance checks.
-              </p>
+              <h3>{t('rotaiqProduct.benefit4Title')}</h3>
+              <p>{t('rotaiqProduct.benefit4Desc')}</p>
             </div>
           </div>
         </div>
@@ -379,37 +349,25 @@ function RotaIQProduct() {
       <section className="product-use-cases">
         <div className="container">
           <div className="section-header">
-            <h2>Perfect For</h2>
+            <h2>{t('rotaiqProduct.useCasesTitle')}</h2>
             <div className="underline"></div>
           </div>
           <div className="use-cases-grid">
             <div className="use-case-card">
-              <h3>Retail</h3>
-              <p>
-                Handle variable customer traffic with flexible scheduling that
-                adapts to peak hours and seasons.
-              </p>
+              <h3>{t('rotaiqProduct.useCase1Title')}</h3>
+              <p>{t('rotaiqProduct.useCase1Desc')}</p>
             </div>
             <div className="use-case-card">
-              <h3>Healthcare</h3>
-              <p>
-                Ensure 24/7 coverage with shift rotations that meet medical
-                staffing requirements and certifications.
-              </p>
+              <h3>{t('rotaiqProduct.useCase2Title')}</h3>
+              <p>{t('rotaiqProduct.useCase2Desc')}</p>
             </div>
             <div className="use-case-card">
-              <h3>Hospitality</h3>
-              <p>
-                Manage diverse staff across multiple locations with schedules
-                that account for events and bookings.
-              </p>
+              <h3>{t('rotaiqProduct.useCase3Title')}</h3>
+              <p>{t('rotaiqProduct.useCase3Desc')}</p>
             </div>
             <div className="use-case-card">
-              <h3>Manufacturing</h3>
-              <p>
-                Coordinate shift workers and production schedules with precision
-                for maximum efficiency.
-              </p>
+              <h3>{t('rotaiqProduct.useCase4Title')}</h3>
+              <p>{t('rotaiqProduct.useCase4Desc')}</p>
             </div>
           </div>
         </div>
@@ -419,11 +377,8 @@ function RotaIQProduct() {
       <section className="product-cta">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to Transform Your Scheduling?</h2>
-            <p>
-              Join businesses saving time and money with intelligent workforce
-              management. Download RotaIQ now!
-            </p>
+            <h2>{t('rotaiqProduct.ctaTitle')}</h2>
+            <p>{t('rotaiqProduct.ctaDesc')}</p>
             <div className="app-download-buttons cta-download">
               <a
                 href="https://apps.apple.com/gb/app/rotaiq/id6752257652"
@@ -556,13 +511,13 @@ function RotaIQProduct() {
               </a>
             </div>
             <p className="contact-note">
-              Have questions? <Link to="/#contact">Contact us</Link>
+              {t('rotaiqProduct.contactNote')} <Link to="/#contact">{t('rotaiqProduct.contactUs')}</Link>
             </p>
             <div className="legal-links">
-              <Link to="/products/rotaiq/privacy-policy">Privacy Policy</Link>
+              <Link to="/products/rotaiq/privacy-policy">{t('rotaiqProduct.privacyPolicy')}</Link>
               <span className="legal-separator">•</span>
               <Link to="/products/rotaiq/terms-conditions">
-                Terms & Conditions
+                {t('rotaiqProduct.termsConditions')}
               </Link>
             </div>
           </div>

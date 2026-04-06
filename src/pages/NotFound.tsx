@@ -1,17 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "../App.css";
 
 function NotFound() {
-  // Funny messages to rotate through
-  const funnyMessages = [
-    "Looks like you took a wrong turn at the internet!",
-    "This page went on vacation... without leaving a forwarding address.",
-    "Houston, we have a problem. This page doesn't exist!",
-    "Even our sharks couldn't find this page.",
-    "Plot twist: This page was just a figment of your imagination.",
-    "This page is playing hide and seek... and winning!",
-  ];
+  const { t } = useTranslation();
+
+  const funnyMessages = t('notFound.funnyMessages', { returnObjects: true }) as string[];
 
   const [message] = useState(
     () => funnyMessages[Math.floor(Math.random() * funnyMessages.length)]
@@ -28,13 +23,13 @@ function NotFound() {
         </div>
 
         {/* Main Message */}
-        <h1 className="error-title">Oops! Page Not Found</h1>
+        <h1 className="error-title">{t('notFound.title')}</h1>
         <p className="error-message">{message}</p>
 
         {/* Funny Shark ASCII Art */}
         <div className="shark-ascii">
           <p className="shark-speech">
-            "I'm a Sharx, not a GPS! But I can help you get back..."
+            {t('notFound.sharkSpeech')}
           </p>
         </div>
 
@@ -53,7 +48,7 @@ function NotFound() {
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
-            Take Me Home
+            {t('notFound.takeHome')}
           </Link>
           <button
             onClick={() => window.history.back()}
@@ -71,18 +66,18 @@ function NotFound() {
               <line x1="19" y1="12" x2="5" y2="12"></line>
               <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
-            Go Back
+            {t('notFound.goBack')}
           </button>
         </div>
 
         {/* Helpful Links */}
         <div className="helpful-links">
-          <p className="helpful-title">Maybe you were looking for:</p>
+          <p className="helpful-title">{t('notFound.helpfulTitle')}</p>
           <div className="link-grid">
-            <Link to="/">Home</Link>
-            <Link to="/products/sharx">Sharx App</Link>
+            <Link to="/">{t('nav.home')}</Link>
+            <Link to="/products/sharx">{t('notFound.sharxApp')}</Link>
             <Link to="/products/rotaiq">RotaIQ</Link>
-            <Link to="/#contact">Contact Us</Link>
+            <Link to="/#contact">{t('notFound.contactUs')}</Link>
           </div>
         </div>
       </div>

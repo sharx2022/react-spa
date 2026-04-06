@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import "../App.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function SharxProduct() {
+  const { t } = useTranslation();
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -26,21 +28,19 @@ function SharxProduct() {
               <line x1="19" y1="12" x2="5" y2="12"></line>
               <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
-            Back to Home
+            {t('sharxProduct.backToHome')}
           </Link>
           <div className="product-hero-content" id="about">
             <div className="product-hero-text">
               <h1>Sharx</h1>
-              <h2>Share Your Cab</h2>
+              <h2>{t('sharxProduct.heroSubtitle')}</h2>
               <p className="product-hero-description">
-                Revolutionary carpooling platform connecting commuters for
-                shared rides. Save money, reduce emissions, and make your
-                commute enjoyable. Share the ride, Split the fare, Save money
+                {t('sharxProduct.heroDescription')}
               </p>
               <div className="product-hero-tags">
-                <span className="tag">Smart Matching</span>
-                <span className="tag">Secure Payments</span>
-                <span className="tag">Eco-Friendly</span>
+                <span className="tag">{t('sharxProduct.tagSmartMatching')}</span>
+                <span className="tag">{t('sharxProduct.tagSecurePayments')}</span>
+                <span className="tag">{t('sharxProduct.tagEcoFriendly')}</span>
               </div>
               {/* <div className="product-hero-buttons">
                 <a href="#problem" className="btn btn-primary">
@@ -199,30 +199,28 @@ function SharxProduct() {
       <section id="problem" className="problem-section">
         <div className="container">
           <div className="section-header">
-            <h2>The Problem</h2>
+            <h2>{t('sharxProduct.problemTitle')}</h2>
             <div className="underline"></div>
             <p className="section-subtitle alert">
-              This problem affects you too!
+              {t('sharxProduct.problemAlert')}
             </p>
           </div>
           <div className="problem-content">
-            <h3>The Problem we are trying to solve…</h3>
+            <h3>{t('sharxProduct.problemHeading')}</h3>
             <p className="problem-text">
-              Nowadays the expensive and environmentally harmful transportation
-              is not a viable solution anymore
+              {t('sharxProduct.problemText1')}
             </p>
             <p className="problem-text">
-              There is an increasing demand for taxi/ridehail rides that leads
-              companies to expand their fleet.
+              {t('sharxProduct.problemText2')}
             </p>
             <div className="problem-stats">
               <div className="problem-stat">
                 <div className="stat-number">300k+</div>
-                <p>Daily taxi rides in London</p>
+                <p>{t('sharxProduct.dailyRides')}</p>
               </div>
               <div className="problem-stat">
                 <div className="stat-number">79%</div>
-                <p>of taxis use diesel engines</p>
+                <p>{t('sharxProduct.dieselEngines')}</p>
               </div>
             </div>
           </div>
@@ -233,12 +231,12 @@ function SharxProduct() {
       <section className="how-it-works">
         <div className="container">
           <div className="section-header">
-            <h2>How It Works</h2>
+            <h2>{t('sharxProduct.howItWorksTitle')}</h2>
             <div className="underline"></div>
-            <p className="section-subtitle">What we do</p>
+            <p className="section-subtitle">{t('sharxProduct.howItWorksSubtitle')}</p>
           </div>
           <p className="how-it-works-intro">
-            We match co-riders so they can split their taxi fares.
+            {t('sharxProduct.howItWorksIntro')}
           </p>
           <div className="steps-grid">
             <div className="step-card">
@@ -256,11 +254,8 @@ function SharxProduct() {
                   <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 6.9 8 11.7z"></path>
                 </svg>
               </div>
-              <h3>Select your trip info</h3>
-              <p>
-                Select your departure and arrival point as well as your trip
-                time.
-              </p>
+              <h3>{t('sharxProduct.step1Title')}</h3>
+              <p>{t('sharxProduct.step1Desc')}</p>
             </div>
             <div className="step-card">
               <div className="step-number">02</div>
@@ -279,11 +274,8 @@ function SharxProduct() {
                   <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                 </svg>
               </div>
-              <h3>Choose your co-rider</h3>
-              <p>
-                Scroll through the available co-riders and send ride-requests to
-                those you like.
-              </p>
+              <h3>{t('sharxProduct.step2Title')}</h3>
+              <p>{t('sharxProduct.step2Desc')}</p>
             </div>
             <div className="step-card">
               <div className="step-number">03</div>
@@ -299,11 +291,8 @@ function SharxProduct() {
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                 </svg>
               </div>
-              <h3>Chat</h3>
-              <p>
-                Chat with your co-rider to build trust and organise an amazing
-                taxi ride.
-              </p>
+              <h3>{t('sharxProduct.step3Title')}</h3>
+              <p>{t('sharxProduct.step3Desc')}</p>
             </div>
           </div>
         </div>
@@ -313,54 +302,54 @@ function SharxProduct() {
       <section className="pricing-section">
         <div className="container">
           <div className="section-header">
-            <h2>Our Plans</h2>
+            <h2>{t('sharxProduct.pricingTitle')}</h2>
             <div className="underline"></div>
             <p className="section-subtitle">
-              We offer a plan for everyone out there
+              {t('sharxProduct.pricingSubtitle')}
             </p>
           </div>
           <div className="pricing-grid">
             <div className="pricing-card">
-              <h3>Free</h3>
+              <h3>{t('sharxProduct.planFree')}</h3>
               <div className="price">
                 <span className="currency">£</span>
                 <span className="amount">0</span>
               </div>
-              <p className="plan-tagline">Give it a try</p>
+              <p className="plan-tagline">{t('sharxProduct.planFreeTagline')}</p>
               <ul className="plan-features">
-                <li>5 ride requests / day</li>
+                <li>{t('sharxProduct.planFreeFeature')}</li>
               </ul>
               <a href="#about" className="btn btn-secondary">
-                Download
+                {t('sharxProduct.download')}
               </a>
             </div>
             <div className="pricing-card popular">
-              <div className="popular-badge">Popular</div>
-              <h3>Silver</h3>
+              <div className="popular-badge">{t('sharxProduct.popular')}</div>
+              <h3>{t('sharxProduct.planSilver')}</h3>
               <div className="price">
                 <span className="currency">£</span>
                 <span className="amount">0.99</span>
               </div>
-              <p className="plan-tagline">Get some flexibility</p>
+              <p className="plan-tagline">{t('sharxProduct.planSilverTagline')}</p>
               <ul className="plan-features">
-                <li>10 ride requests / purchase</li>
+                <li>{t('sharxProduct.planSilverFeature')}</li>
               </ul>
               <a href="#about" className="btn btn-primary">
-                Download
+                {t('sharxProduct.download')}
               </a>
             </div>
             <div className="pricing-card">
-              <h3>Gold</h3>
+              <h3>{t('sharxProduct.planGold')}</h3>
               <div className="price">
                 <span className="currency">£</span>
                 <span className="amount">1.99</span>
               </div>
-              <p className="plan-tagline">Our best plan</p>
+              <p className="plan-tagline">{t('sharxProduct.planGoldTagline')}</p>
               <ul className="plan-features">
-                <li>25 ride requests / purchase</li>
+                <li>{t('sharxProduct.planGoldFeature')}</li>
               </ul>
               <a href="#about" className="btn btn-secondary">
-                Download
+                {t('sharxProduct.download')}
               </a>
             </div>
           </div>
@@ -371,16 +360,16 @@ function SharxProduct() {
       <section className="faqs-section">
         <div className="container">
           <div className="section-header">
-            <h2>FAQs</h2>
+            <h2>{t('sharxProduct.faqsTitle')}</h2>
             <div className="underline"></div>
             <p className="section-subtitle">
-              Here you will find everything needed to start
+              {t('sharxProduct.faqsSubtitle')}
             </p>
           </div>
           <div className="faqs-list">
             <div className={`faq-item ${openFaq === 0 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(0)}>
-                <span>Where can I find the app?</span>
+                <span>{t('sharxProduct.faq0Question')}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -394,16 +383,12 @@ function SharxProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>
-                  The app is available for both iOS and Android devices. You can
-                  find it in App Store and Google Play. We work hard to offer to
-                  everyone safe, affordable and quick commuting.
-                </p>
+                <p>{t('sharxProduct.faq0Answer')}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 1 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(1)}>
-                <span>How will I find my co-rider?</span>
+                <span>{t('sharxProduct.faq1Question')}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -417,17 +402,12 @@ function SharxProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>
-                  After creating a free account in sharx app, you will be able
-                  to search for co-riders, send and receive ride requests and
-                  chat with them to plan your trip. Our app will help you find
-                  someone who is in close distance to you.
-                </p>
+                <p>{t('sharxProduct.faq1Answer')}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 2 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(2)}>
-                <span>Is it safe to use sharx?</span>
+                <span>{t('sharxProduct.faq2Question')}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -441,17 +421,12 @@ function SharxProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>
-                  Sharx creates a safe environment for all its users. We have
-                  implemented features such as rating and reporting to keep
-                  unwanted behaviours away. We respect all our users and we act
-                  quickly to eliminate any issue.
-                </p>
+                <p>{t('sharxProduct.faq2Answer')}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 3 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(3)}>
-                <span>Should I give money to book a ride?</span>
+                <span>{t('sharxProduct.faq3Question')}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -465,17 +440,12 @@ function SharxProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>
-                  You should NEVER send money to people you do not know.
-                  Currently, Sharx does not support direct taxi/ridehail from
-                  third parties. Therefore, it is better to meet with your
-                  co-rider and arrange the payment together.
-                </p>
+                <p>{t('sharxProduct.faq3Answer')}</p>
               </div>
             </div>
             <div className={`faq-item ${openFaq === 4 ? "open" : ""}`}>
               <button className="faq-question" onClick={() => toggleFaq(4)}>
-                <span>How do I buy more requests?</span>
+                <span>{t('sharxProduct.faq4Question')}</span>
                 <svg
                   className="faq-icon"
                   viewBox="0 0 24 24"
@@ -489,11 +459,7 @@ function SharxProduct() {
                 </svg>
               </button>
               <div className="faq-answer">
-                <p>
-                  More requests means more possibilities to find a co-rider and
-                  share your ride. You can buy requests from the app's slide bar
-                  by selecting Purchase Requests.
-                </p>
+                <p>{t('sharxProduct.faq4Answer')}</p>
               </div>
             </div>
           </div>
@@ -504,11 +470,8 @@ function SharxProduct() {
       <section className="product-cta">
         <div className="container">
           <div className="cta-content">
-            <h2>Ready to Start Sharing Rides?</h2>
-            <p>
-              Join commuters who are saving money and helping the environment.
-              Download Sharx now!
-            </p>
+            <h2>{t('sharxProduct.ctaTitle')}</h2>
+            <p>{t('sharxProduct.ctaDesc')}</p>
             <div className="app-download-buttons cta-download">
               <a
                 href="https://apps.apple.com/gb/app/sharx-cab-taxi-sharing-london/id6450862437"
@@ -641,20 +604,20 @@ function SharxProduct() {
               </a>
             </div>
             <p className="contact-note">
-              Have questions? <Link to="/#contact">Contact us</Link>
+              {t('sharxProduct.contactNote')} <Link to="/#contact">{t('sharxProduct.contactUs')}</Link>
             </p>
             <div className="legal-links">
-              <Link to="/products/sharx/privacy-policy">Privacy Policy</Link>
+              <Link to="/products/sharx/privacy-policy">{t('sharxProduct.privacyPolicy')}</Link>
               <span className="separator">•</span>
               <Link to="/products/sharx/terms-conditions">
-                Terms & Conditions
+                {t('sharxProduct.termsConditions')}
               </Link>
               <span className="separator">•</span>
               <Link to="/products/sharx/community-guidelines">
-                Community Guidelines
+                {t('sharxProduct.communityGuidelines')}
               </Link>
               <span className="separator">•</span>
-              <Link to="/products/sharx/safety-tips">Safety Tips</Link>
+              <Link to="/products/sharx/safety-tips">{t('sharxProduct.safetyTips')}</Link>
             </div>
           </div>
         </div>

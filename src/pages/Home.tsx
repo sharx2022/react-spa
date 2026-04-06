@@ -3,8 +3,11 @@ import { useState, useRef, useEffect } from "react";
 import type { FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import { useTranslation } from "react-i18next";
 
 function Home() {
+  const { t } = useTranslation();
+
   // Contact form state
   const [formData, setFormData] = useState({
     name: "",
@@ -67,43 +70,43 @@ function Home() {
   const validateForm = (): { isValid: boolean; error?: string } => {
     // Check honeypot (should be empty)
     if (formData.honeypot) {
-      return { isValid: false, error: "Spam detected" };
+      return { isValid: false, error: t('contact.validationSpam') };
     }
 
     // Validate name
     if (formData.name.trim().length < 2) {
-      return { isValid: false, error: "Please enter a valid name" };
+      return { isValid: false, error: t('contact.validationName') };
     }
 
     // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
-      return { isValid: false, error: "Please enter a valid email address" };
+      return { isValid: false, error: t('contact.validationEmail') };
     }
 
     // Validate subject
     if (formData.subject.trim().length < 3) {
-      return { isValid: false, error: "Please enter a subject" };
+      return { isValid: false, error: t('contact.validationSubject') };
     }
 
     // Validate message
     if (formData.message.trim().length < 10) {
       return {
         isValid: false,
-        error: "Please enter a message (at least 10 characters)",
+        error: t('contact.validationMessage'),
       };
     }
 
     // Check for spam patterns (excessive links, all caps, etc.)
     const linkCount = (formData.message.match(/https?:\/\//g) || []).length;
     if (linkCount > 2) {
-      return { isValid: false, error: "Too many links in message" };
+      return { isValid: false, error: t('contact.validationLinks') };
     }
 
     const capsRatio =
       (formData.message.match(/[A-Z]/g) || []).length / formData.message.length;
     if (capsRatio > 0.7 && formData.message.length > 20) {
-      return { isValid: false, error: "Please don't use all caps" };
+      return { isValid: false, error: t('contact.validationCaps') };
     }
 
     return { isValid: true };
@@ -122,14 +125,12 @@ function Home() {
 
       // Prevent submissions more frequent than once per minute
       if (timeSinceLastSubmit < 60000) {
-        throw new Error("Please wait a moment before sending another message");
+        throw new Error(t('contact.rateLimitWait'));
       }
 
       // Limit to 3 submissions per hour
       if (submissionCount.current >= 3) {
-        throw new Error(
-          "You've reached the maximum number of submissions. Please try again later."
-        );
+        throw new Error(t('contact.rateLimitMax'));
       }
 
       // Validate form
@@ -140,7 +141,7 @@ function Home() {
 
       // Execute reCAPTCHA
       if (!executeRecaptcha) {
-        throw new Error("reCAPTCHA not loaded. Please refresh and try again.");
+        throw new Error(t('contact.recaptchaError'));
       }
 
       const recaptchaToken = await executeRecaptcha("contact_form");
@@ -180,7 +181,7 @@ function Home() {
       // Success
       setSubmitStatus({
         type: "success",
-        message: "Thank you! Your message has been sent successfully.",
+        message: t('contact.successMessage'),
       });
 
       // Reset form
@@ -196,7 +197,7 @@ function Home() {
       const errorMessage =
         error instanceof Error
           ? error.message
-          : "Sorry, there was an error sending your message. Please try again or email us directly at support@officialsharx.com";
+          : t('contact.errorMessage');
 
       setSubmitStatus({
         type: "error",
@@ -213,17 +214,16 @@ function Home() {
         <div className="hero-background"></div>
         <div className="container">
           <div className="hero-content">
-            <h1 className="hero-title">Crafting Digital Excellence</h1>
+            <h1 className="hero-title">{t('hero.title')}</h1>
             <p className="hero-subtitle">
-              We are Sharx a London-based software company delivering
-              cutting-edge mobile solutions to clients worldwide
+              {t('hero.subtitle')}
             </p>
             <div className="hero-buttons">
               <a href="#products" className="btn btn-primary">
-                Our Products
+                {t('hero.ourProducts')}
               </a>
               <a href="#contact" className="btn btn-secondary">
-                Get in Touch
+                {t('hero.getInTouch')}
               </a>
             </div>
           </div>
@@ -237,21 +237,17 @@ function Home() {
       <section id="about" className="about">
         <div className="container">
           <div className="section-header">
-            <h2>About Sharx</h2>
+            <h2>{t('about.sectionTitle')}</h2>
             <div className="underline"></div>
           </div>
           <div className="about-content">
             <div className="about-story">
-              <h3>About Us</h3>
+              <h3>{t('about.aboutUs')}</h3>
               <p className="lead">
-                We are a group of people with a common dream, to make this world
-                better for everyone.
+                {t('about.lead')}
               </p>
               <p>
-                A strong friendship led to the creation of Sharx. Based in
-                London, we collaborate with talented professionals from around
-                the world, bringing diverse perspectives and cutting-edge
-                expertise to every project.
+                {t('about.story')}
               </p>
             </div>
 
@@ -271,10 +267,9 @@ function Home() {
                     <path d="M2 12l10 5 10-5"></path>
                   </svg>
                 </div>
-                <h3>Our Mission</h3>
+                <h3>{t('about.missionTitle')}</h3>
                 <p>
-                  To help people ameliorate their daily life by delivering
-                  software solutions to the people who need them.
+                  {t('about.missionText')}
                 </p>
               </div>
 
@@ -291,19 +286,16 @@ function Home() {
                     <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                   </svg>
                 </div>
-                <h3>Our Values</h3>
+                <h3>{t('about.valuesTitle')}</h3>
                 <ul className="values-list">
                   <li>
-                    <strong>Respect:</strong> We treat everyone with respect and
-                    empathy.
+                    <strong>{t('about.respect')}:</strong> {t('about.valueRespect')}
                   </li>
                   <li>
-                    <strong>Integrity:</strong> We always act with honesty and
-                    transparency.
+                    <strong>{t('about.integrity')}:</strong> {t('about.valueIntegrity')}
                   </li>
                   <li>
-                    <strong>Excellence:</strong> We are dedicated to delivering
-                    high-quality solutions.
+                    <strong>{t('about.excellence')}:</strong> {t('about.valueExcellence')}
                   </li>
                 </ul>
               </div>
@@ -323,8 +315,8 @@ function Home() {
                     <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                   </svg>
                 </div>
-                <h3>Innovative</h3>
-                <p>Cutting-edge Solutions</p>
+                <h3>{t('about.innovative')}</h3>
+                <p>{t('about.cuttingEdge')}</p>
               </div>
               <div className="stat-card">
                 <div className="stat-icon">
@@ -342,8 +334,8 @@ function Home() {
                     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                   </svg>
                 </div>
-                <h3>Global</h3>
-                <p>Worldwide Collaboration</p>
+                <h3>{t('about.global')}</h3>
+                <p>{t('about.worldwide')}</p>
               </div>
               <div className="stat-card">
                 <div className="stat-icon">
@@ -360,8 +352,8 @@ function Home() {
                     <path d="M2 12l10 5 10-5"></path>
                   </svg>
                 </div>
-                <h3>Agile</h3>
-                <p>Fast Development</p>
+                <h3>{t('about.agile')}</h3>
+                <p>{t('about.fastDev')}</p>
               </div>
               <div className="stat-card">
                 <div className="stat-icon">
@@ -377,8 +369,8 @@ function Home() {
                     <polyline points="22 4 12 14.01 9 11.01"></polyline>
                   </svg>
                 </div>
-                <h3>Quality</h3>
-                <p>Excellence Driven</p>
+                <h3>{t('about.quality')}</h3>
+                <p>{t('about.excellenceDriven')}</p>
               </div>
             </div>
           </div>
@@ -389,10 +381,10 @@ function Home() {
       <section id="products" className="products">
         <div className="container">
           <div className="section-header">
-            <h2>Our Products</h2>
+            <h2>{t('products.sectionTitle')}</h2>
             <div className="underline"></div>
             <p className="section-subtitle">
-              Innovative solutions designed to solve real-world problems
+              {t('products.sectionSubtitle')}
             </p>
           </div>
           <div className="products-grid">
@@ -410,20 +402,17 @@ function Home() {
                 </svg>
               </div>
               <h3>Sharx</h3>
-              <h4>Share Your Cab</h4>
+              <h4>{t('products.sharxSubtitle')}</h4>
               <p>
-                Revolutionary carpooling platform that connects commuters
-                heading in the same direction. Save money, reduce carbon
-                footprint, and make your daily commute more enjoyable by sharing
-                rides with verified users.
+                {t('products.sharxDesc')}
               </p>
               <div className="product-features">
-                <span className="feature-tag">Smart Matching</span>
-                <span className="feature-tag">Real-time Tracking</span>
-                <span className="feature-tag">Secure Payments</span>
+                <span className="feature-tag">{t('products.smartMatching')}</span>
+                <span className="feature-tag">{t('products.realTimeTracking')}</span>
+                <span className="feature-tag">{t('products.securePayments')}</span>
               </div>
               <Link to="/products/sharx" className="product-link">
-                Learn More
+                {t('products.learnMore')}
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -454,20 +443,17 @@ function Home() {
                 </svg>
               </div>
               <h3>RotaIQ</h3>
-              <h4>Schedule Generator</h4>
+              <h4>{t('products.rotaiqSubtitle')}</h4>
               <p>
-                Intelligent scheduling software that automates workforce
-                management. Create optimal work schedules in minutes,
-                considering availability, skills, and labor regulations. Perfect
-                for businesses of all sizes.
+                {t('products.rotaiqDesc')}
               </p>
               <div className="product-features">
-                <span className="feature-tag">AI-Powered</span>
-                <span className="feature-tag">Auto-Scheduling</span>
-                <span className="feature-tag">Shift Management</span>
+                <span className="feature-tag">{t('products.aiPowered')}</span>
+                <span className="feature-tag">{t('products.autoScheduling')}</span>
+                <span className="feature-tag">{t('products.shiftManagement')}</span>
               </div>
               <Link to="/products/rotaiq" className="product-link">
-                Learn More
+                {t('products.learnMore')}
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -489,10 +475,10 @@ function Home() {
       <section id="services" className="services">
         <div className="container">
           <div className="section-header">
-            <h2>Our Services</h2>
+            <h2>{t('services.sectionTitle')}</h2>
             <div className="underline"></div>
             <p className="section-subtitle">
-              Comprehensive software solutions tailored to your needs
+              {t('services.sectionSubtitle')}
             </p>
           </div>
           <div className="services-grid">
@@ -510,12 +496,8 @@ function Home() {
                   <line x1="12" y1="18" x2="12.01" y2="18"></line>
                 </svg>
               </div>
-              <h3>Mobile App Development</h3>
-              <p>
-                Cross-platform mobile applications built with the latest
-                technologies. From iOS to Android, we create seamless
-                experiences for your users.
-              </p>
+              <h3>{t('services.mobileTitle')}</h3>
+              <p>{t('services.mobileDesc')}</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
@@ -532,12 +514,8 @@ function Home() {
                   <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              <h3>Web Development</h3>
-              <p>
-                Modern, responsive web applications that deliver exceptional
-                user experiences. Built with cutting-edge frameworks and best
-                practices.
-              </p>
+              <h3>{t('services.webTitle')}</h3>
+              <p>{t('services.webDesc')}</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
@@ -552,11 +530,8 @@ function Home() {
                   <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
                 </svg>
               </div>
-              <h3>Cloud Solutions</h3>
-              <p>
-                Scalable cloud infrastructure and deployment strategies. We help
-                you leverage the power of AWS, Azure, and Google Cloud.
-              </p>
+              <h3>{t('services.cloudTitle')}</h3>
+              <p>{t('services.cloudDesc')}</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
@@ -574,11 +549,8 @@ function Home() {
                   <circle cx="11" cy="11" r="2"></circle>
                 </svg>
               </div>
-              <h3>UI/UX Design</h3>
-              <p>
-                Beautiful, intuitive interfaces that users love. Our design team
-                creates experiences that are both functional and delightful.
-              </p>
+              <h3>{t('services.uiuxTitle')}</h3>
+              <p>{t('services.uiuxDesc')}</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
@@ -593,12 +565,8 @@ function Home() {
                   <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
                 </svg>
               </div>
-              <h3>Consulting & Strategy</h3>
-              <p>
-                Expert guidance on technology decisions and digital
-                transformation. We help you navigate the complex world of
-                software development.
-              </p>
+              <h3>{t('services.consultingTitle')}</h3>
+              <p>{t('services.consultingDesc')}</p>
             </div>
             <div className="service-card">
               <div className="service-icon">
@@ -614,11 +582,8 @@ function Home() {
                   <polygon points="10 8 16 12 10 16 10 8"></polygon>
                 </svg>
               </div>
-              <h3>Product Development</h3>
-              <p>
-                End-to-end product development from concept to launch. We turn
-                your ideas into reality with agile methodologies.
-              </p>
+              <h3>{t('services.productTitle')}</h3>
+              <p>{t('services.productDesc')}</p>
             </div>
           </div>
         </div>
@@ -628,10 +593,10 @@ function Home() {
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-header">
-            <h2>Get in Touch</h2>
+            <h2>{t('contact.sectionTitle')}</h2>
             <div className="underline"></div>
             <p className="section-subtitle">
-              Ready to start your next project? Let's talk.
+              {t('contact.sectionSubtitle')}
             </p>
           </div>
           <div className="contact-content">
@@ -650,7 +615,7 @@ function Home() {
                     <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
-                <h3>Address</h3>
+                <h3>{t('contact.address')}</h3>
                 <p>London Office 167-169,</p>
                 <p>Great Portland Street,</p>
                 <p>5th Floor, W1W 5PF, UK</p>
@@ -669,9 +634,9 @@ function Home() {
                     <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
-                <h3>Email</h3>
+                <h3>{t('contact.email')}</h3>
                 <p>support@officialsharx.com</p>
-                <p className="small">We'll respond as soon as possible</p>
+                <p className="small">{t('contact.responseNote')}</p>
               </div>
               <div className="info-card">
                 <div className="info-icon">
@@ -687,10 +652,10 @@ function Home() {
                     <polyline points="12 6 12 12 16 14"></polyline>
                   </svg>
                 </div>
-                <h3>Working Hours</h3>
-                <p>Mon.-Fri.: 9AM – 5PM</p>
-                <p>Saturday: 10AM – 4PM</p>
-                <p>Sunday: Closed</p>
+                <h3>{t('contact.workingHours')}</h3>
+                <p>{t('contact.monFri')}</p>
+                <p>{t('contact.saturday')}</p>
+                <p>{t('contact.sunday')}</p>
               </div>
             </div>
             <div className="contact-form">
@@ -729,7 +694,7 @@ function Home() {
                   <input
                     type="text"
                     name="name"
-                    placeholder="Your Name"
+                    placeholder={t('contact.namePlaceholder')}
                     value={formData.name}
                     onChange={handleInputChange}
                     required
@@ -740,7 +705,7 @@ function Home() {
                   <input
                     type="email"
                     name="email"
-                    placeholder="Your Email"
+                    placeholder={t('contact.emailPlaceholder')}
                     value={formData.email}
                     onChange={handleInputChange}
                     required
@@ -751,7 +716,7 @@ function Home() {
                   <input
                     type="text"
                     name="subject"
-                    placeholder="Subject"
+                    placeholder={t('contact.subjectPlaceholder')}
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
@@ -761,7 +726,7 @@ function Home() {
                 <div className="form-group">
                   <textarea
                     name="message"
-                    placeholder="Your Message"
+                    placeholder={t('contact.messagePlaceholder')}
                     rows={5}
                     value={formData.message}
                     onChange={handleInputChange}
@@ -774,16 +739,16 @@ function Home() {
                   className="btn btn-primary btn-full"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? t('contact.sending') : t('contact.sendMessage')}
                 </button>
                 <p className="recaptcha-notice">
-                  This site is protected by reCAPTCHA and the Google{" "}
+                  {t('contact.recaptchaNotice')}{" "}
                   <a
                     href="https://policies.google.com/privacy"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Privacy Policy
+                    {t('contact.privacyPolicy')}
                   </a>{" "}
                   and{" "}
                   <a
@@ -791,9 +756,9 @@ function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Terms of Service
+                    {t('contact.termsOfService')}
                   </a>{" "}
-                  apply.
+                  {t('contact.recaptchaApply')}
                 </p>
               </form>
             </div>
