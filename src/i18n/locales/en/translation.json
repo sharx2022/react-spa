@@ -10,7 +10,7 @@
   },
   "footer": {
     "tagline": "Crafting Digital Excellence",
-    "copyright": "© 2025 Sharx. All rights reserved."
+    "copyright": "© {{year}} Sharx. All rights reserved."
   },
   "hero": {
     "title": "Crafting Digital Excellence",

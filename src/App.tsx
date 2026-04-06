@@ -121,7 +121,7 @@ function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>{t('footer.copyright')}</p>
+            <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
           </div>
         </div>
       </footer>
